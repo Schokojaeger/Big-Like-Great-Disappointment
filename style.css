@@ -4,7 +4,7 @@ body{
     grid-template-rows: auto 1fr 1fr;
     /*background-color: rgb(41, 41, 40);*/
     background-color: lightslategray;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Arial, serif;
 }
 
 /*Login Containers*/
