@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+    <title>Crush Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Login Button-->
+    <button class="loginButton" onclick="document.getElementById('login').style.display='block'">Login</button>
+
+    <!--Login-->
+    <div id="login" class="login-wrap">
+      <div class="login-html">
+          <input id="tabOne" type="radio" name="tab" class="sign-in" checked>
+          <label for="tabOne" class="tab">Sign In</label>
+          <input id="tabTwo" type="radio" name="tab" class="sign-up">
+          <label for="tabTwo" class="tab">Sign Up</label>
+          <div class="login-form">
+              <div class="sign-in-htm">
+                  <div class="group">
+                      <label for="user" class="label">Username</label>
+                      <input type="text" id="user" class="input">
+                  </div>
+                  <div class="group">
+                      <label for="pass" class="label">Password</label>
+                      <input id="pass" type="password" class="input" data-type="password">
+                  </div>
+                  <div class="group">
+                      <input type="submit" class="button" value="Sign In">
+                  </div>
+                  <div class="hr"></div>
+                  <div class="foot-link">
+                      <a href="#">Forgot Password?</a>
+                  </div>
+                  <button>continue as guest</button><!--should be seen on the sign in (front-side)-->
+              </div>
+              <div class="sign-up-htm">
+                  <div class="group">
+                      <label for="user" class="label">Username</label>
+                      <input type="text" id="user" class="input">
+                  </div>
+                  <div class="group">
+                      <label for="pass" class="label">Password</label>
+                      <input type="password" id="pass" class="input" data-type="password">
+                  </div>
+                  <div class="group">
+                      <label for="pass" class="label">Repeat Password</label>
+                      <input type="password" id="pass" class="input" data-type="password">
+                  </div>
+                  <div class="group">
+                      <label for="pass" class="label">Email Address</label>
+                      <input id="pass" type="text" class="input">
+                  </div>
+                  <div class="group">
+                      <input type="submit" class="button" value="Sign Up">
+                  </div>
+                  <div class="hr"></div>
+                  <div class="foot-lnk"></div>
+                  <label for="tabOne">Already Member? </label>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!--Game-->
+    <div class="main_story">
+
+        <!--create Function to change the photo, if pictures are added-->
+        <div class="photo">bild</div>
+        <div id="story" onclick="mainStory('Main Story Change')">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+             et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+             labore et dolore magna aliquyam erat, sed diam voluptua.
+        </div>
+    </div>
+
+    <div class="decisions">
+        <button id="buttonOne" onclick="buttonChangeOne('One')">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        </button>
+        <button id="buttonTwo" onclick="buttonChangeTwo('Two')">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        </button>
+        <button id="buttonThree" onclick="buttonChangeThree('Three')">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+         </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--PHP-->
+<!--https://codepen.io/khadkamhn/pen/ZGvPLo for login idea
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
