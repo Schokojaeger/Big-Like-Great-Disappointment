@@ -1,7 +1,16 @@
 
-function mainStory(story){
-  document.getElementById("story").textContent = story;
+var contmain = "OriginalText Text"
+
+function mainStory(){
+  document.getElementById("story").innerHTML = contmain;
 }
+ 
+if (document.getElementById("story").textContent = contmain) {
+  var contmain = "Braaaaaaap"
+} else {
+  var contmain = "dürfte nicht dastehen"
+}
+
 
 
 function buttonChangeOne(textOne){
