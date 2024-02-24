@@ -1,4 +1,4 @@
-let contmain = 'Original<br>Text';
+let contmain = '';
 let fuck = 'Zweiter<br>Text';
 let fugg = 'Dritter<br>Text';
 let def = 'default';
