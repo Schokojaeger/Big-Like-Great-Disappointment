@@ -1,8 +1,19 @@
+let contmain = 'Original<br>Text';
+let fuck = 'Zweiter<br>Text';
+let fugg = 'Dritter<br>Text';
+let def = 'default';
 
-function mainStory(story){
-  document.getElementById("story").textContent = story;
+document.getElementById("story").innerHTML = contmain;
+
+function mainStory(str){
+    document.getElementById("story").innerHTML = str;
 }
 
+
+
+function buttonChangeContinue(textContinue) {
+  document.getElementById("buttonContinue").textContent = textContinue;
+}
 
 function buttonChangeOne(textOne){
   document.getElementById("buttonOne").textContent = textOne;
