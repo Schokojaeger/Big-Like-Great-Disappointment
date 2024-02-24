@@ -132,6 +132,7 @@ a{color:inherit;text-decoration:none}
 }
 
 .main_story{
+    position: relative;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: #ffa4b6;
@@ -142,7 +143,7 @@ a{color:inherit;text-decoration:none}
 
 .decisions{
     grid-row:3 / 4;
-    grid-column: 2 / 3; ;
+    grid-column: 2 / 3;
     margin: 25px 0;
 }
 
@@ -152,6 +153,17 @@ button{
     margin: 10px 0;
     border: none;
     background-color: #a5def2 ;
+}
+
+#buttonContinue {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+
+#story {
+    text-align: center;
 }
 
 button:hover{
