@@ -17,6 +17,15 @@ function buttonChangeContinue(textContinue) {
 
 function buttonChangeOne(textOne){
   document.getElementById("buttonOne").textContent = textOne;
+  switch (document.getElementById("story").innerHTML) {
+    case contmain:
+      mainStory(fuck)
+      break;
+    case fuck:
+      mainStory(fugg)
+      break;
+      default:
+        mainStory(def)
     }
 
 
@@ -28,7 +37,4 @@ function buttonChangeTwo(textTwo){
 function buttonChangeThree(textThree){
   document.getElementById("buttonThree").textContent = textThree;
     }
-
-
-
-
+  }
