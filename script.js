@@ -54,11 +54,44 @@ let C_start_second_2 = '(“Get out of my house right now!”)';
 let C_start_second_3 = '(“Uhmmm…..uhhhhh……uhhh”)';
   let C_start_second_resp_3 = '“We’ll get that shyness out of you yet. Now listen.”';
 
+  
 let C_start_third_start = '“If you want to find yourself someone who is willing to go out with someone like you, you have to do something you’ve never done before in your life.”<br><br>“Talk with them”';
 
 let C_start_third_1 = '(“Okay?”)';
   let C_start_third_resp_1 = '“It’s not as easy as you think. There are very complicated and intricate aspects to talking with people.”';
 
+let C_start_third_2 = '(“OH GOD NO! I’d rather die!!”)';
+  let C_start_third_resp_2 = '“I know I’m asking a lot from you, but this is the only way to get your life back on track.”';
+
+let C_start_third_3 = '(“UHHHHHHHHHHHHHHHHHHHHHHHHH”)';
+  let C_start_third_resp_3 = '“Not a bad attempt, but you have to actually use words instead of one continuous sound.”';
+
+
+let C_start_fourth_start = '“You have to find out what every individual person is interested in and take full advantage of it to get them to do what you want”';
+
+let C_start_fourth_1 = '(“But isn’t that just being manipulative and deceitful?”)';
+  let C_start_fourth_resp_1 = '“Yes, that’s what I just said, didn’t you listen?”';
+
+let C_start_fourth_2 = '(“How about you and I try that right here and now?”)';
+  let C_start_fourth_resp_2 = '“Sorry, I’m not gay.”';
+    let C_start_fourth_2_1 ='(“I’m a woman, though”)';
+      let C_start_fourth_resp_2_1 = '“No you’re not.”';
+        let C_start_fourth_2_1_1 = '(“But I am.”)';
+          let C_start_fourth_resp_2_1_1 = '“Not in this game, you’re not.”';
+        let C_start_fourth_2_1_2 = '(“Okay, sorry”)';
+          let C_start_fourth_resp_2_1_2 = '“Whatever dude.”';
+        let C_start_fourth_2_1_3 = '(“Uhhhmmmmm……uhh…….arghhhh…..”)';
+          let C_start_fourth_resp_2_1_3 = '“What in the world is wrong with you?”';
+    let C_start_fourth_2_2 = '(“Okay, sorry”)';
+      let C_start_fourth_resp_2_2 = '“You better be.”';
+    let C_start_fourth_2_3 = '(“Uhhh….uhm….uh”)';
+      let C_start_fourth_resp_2_3 = '“I know, being rejected hurts like hell huh? And that’s exactly why you gotta man up.”';
+
+let C_start_fourth_3 = '(“Uh…..uh…..uhhhh….”)';
+  let C_start_fourth_resp_3 = '“Too much input for you? That’s okay, you’ll get the hang of it.”';
+
+
+let C_start_fifth_start = '“There are usually three things you can reply with, for anything another person says. You just have to find out which is the right one.”';
 
             
 document.getElementById("story").innerHTML = startText;
@@ -87,44 +120,44 @@ function buttonChangeContinue(textContinue) {
     //Continue für Choice 2_1-4, Button 1
     case C_start_second_resp_1_1_1_1_1:
       mainStory(C_start_third_start);
-      contentB1.innerHTML ='test';
-      contentB2.innerHTML ='test2';
-      contentB3.innerHTML = 'test3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
     //Continue für Choice 2, Button 2
     case C_start_second_resp_2:
         mainStory(C_start_third_start);
-        contentB1.innerHTML ='test';
-        contentB2.innerHTML ='test2';
-        contentB3.innerHTML = 'test3';
+        contentB1.innerHTML = C_start_third_1;
+        contentB2.innerHTML = C_start_third_2;
+        contentB3.innerHTML = C_start_third_3;
         contentContinue.innerHTML = 'Filler';
 
     //Continue für Choice 2, Button 3
     case C_start_second_resp_3:
         mainStory(C_start_third_start);
-        contentB1.innerHTML = 'test';
-        contentB2.innerHTML = 'test2';
-        contentB3.innerHTML = 'test3';
+        contentB1.innerHTML = C_start_third_1;
+        contentB2.innerHTML = C_start_third_2;
+        contentB3.innerHTML = C_start_third_3;
         contentContinue.innerHTML = 'Filler';
         break;
 
     //Continue für Choice 2_1-1, Button 2
     case C_start_second_resp_1_2:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
     //Continue für Choice 2_1-2, Button 2
     case C_start_second_resp_1_1_2:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
@@ -132,18 +165,18 @@ function buttonChangeContinue(textContinue) {
     //Continue für Choice 2_1-3, Button 2
     case C_start_second_resp_1_1_1_2:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
     //Continue für Choice 2_1-4, Button 2
     case C_start_second_resp_1_1_1_1_2:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
@@ -151,38 +184,128 @@ function buttonChangeContinue(textContinue) {
     //Continue für Choice 2_1-1, Button 3
     case C_start_second_resp_1_3:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'tes2';
-      contentB3.innerHTML = 'test3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
     //Continue für Choice 2_1-2, Button 3
     case C_start_second_resp_1_1_3:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'tes2';
-      contentB3.innerHTML = 'tes3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
     //Continue für Choice 2_1-3, Button 3
     case C_start_second_resp_1_1_1_3:
       mainStory(C_start_third_start);
-      contentB1.innerHTML = 'test';
-      contentB2.innerHTML = 'tes2';
-      contentB3.innerHTML = 'tes3';
+      contentB1.innerHTML = C_start_third_1;
+      contentB2.innerHTML = C_start_third_2;
+      contentB3.innerHTML = C_start_third_3;
       contentContinue.innerHTML = 'Filler';
       break;
 
-   // //Continue für Response Starttext 1_3, Button 1
-    //case C_start_third_resp_1:
-      //mainStory(C_start_fourth_start);
-      //contentB1.innerHTML = 'test';
-      //contentB1.innerHTML = 'test';
-      //contentB1.innerHTML = 'test';
-      //contentContinue.innerHTML = 'Filler';
-      //break;
+    //Continue für Response Starttext 1_3, Button 1
+    case C_start_third_resp_1:
+      mainStory(C_start_fourth_start);
+      contentB1.innerHTML = C_start_fourth_1;
+      contentB2.innerHTML = C_start_fourth_2;
+      contentB3.innerHTML = C_start_fourth_3;
+      contentContinue.innerHTML = 'Filler';
+      break;
+
+    //Continue für Response Starttext 1_3, Button 2
+    case C_start_third_resp_2:
+      mainStory(C_start_fourth_start);
+      contentB1.innerHTML = C_start_fourth_1;
+      contentB2.innerHTML = C_start_fourth_2;
+      contentB3.innerHTML = C_start_fourth_3;
+      contentContinue.innerHTML = 'Filler';
+      break;
+    
+    //Continue für Response Starttext 1_3, Button 3
+    case C_start_third_resp_3:
+      mainStory(C_start_fourth_start);
+      contentB1.innerHTML = C_start_fourth_1;
+      contentB2.innerHTML = C_start_fourth_2;
+      contentB3.innerHTML = C_start_fourth_3;
+      contentContinue.innerHTML = 'Filler';
+      break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, Button 1
+    case C_start_fourth_resp_1:
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, B2-1-1
+    case C_start_fourth_resp_2_1_1:
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, B2-1-2
+    case C_start_fourth_resp_2_1_2:
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, B2-1-3
+    case C_start_fourth_resp_2_1_3:
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, B2-2
+    case C_start_fourth_resp_2_2:
+    mainStory(C_start_fifth_start);
+    contentB1.innerHTML = 'test1';
+    contentB2.innerHTML = 'test2';
+    contentB3.innerHTML = 'test3';
+    contentContinue.innerHTML = 'filler';
+    break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, B2-3
+    case C_start_fourth_resp_2_3:
+    mainStory(C_start_fifth_start);
+    contentB1.innerHTML = 'test1';
+    contentB2.innerHTML = 'test2';
+    contentB3.innerHTML = 'test3';
+    contentContinue.innerHTML = 'filler';
+    break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, Button 2
+    case C_start_fourth_resp_2:
+    mainStory(C_start_fifth_start);
+    contentB1.innerHTML = 'test1';
+    contentB2.innerHTML = 'test2';
+    contentB3.innerHTML = 'test3';
+    contentContinue.innerHTML = 'filler';
+    break;
+
+    //Continue für Response Start Sekt. 4 Choice 1, Button 3
+    case C_start_fourth_resp_3:
+    mainStory(C_start_fifth_start);
+    contentB1.innerHTML = 'test1';
+    contentB2.innerHTML = 'test2';
+    contentB3.innerHTML = 'test3';
+    contentContinue.innerHTML = 'filler';
+    break;
   }
 }
 
@@ -200,7 +323,7 @@ function buttonChangeOne() {
       contentB3.innerHTML = C_start_second_3;
       break;
     
-    //Button Klick auf Response: Choice 2, Button 1
+    //Button Klick auf Response: Start Choice 2, Button 1
     case C_start_first_resp_1:
       mainStory(C_start_second_resp_1);
       contentB1.innerHTML = C_start_second_1_1;
@@ -208,7 +331,7 @@ function buttonChangeOne() {
       contentB3.innerHTML = C_start_second_1_3;
       break;
 
-    //Button Klick auf Response: Choice 2, Button 2
+    //Button Klick auf Response: Start Choice 2, Button 2
     case C_start_first_resp_2:
       mainStory(C_start_second_resp_1);
       contentB1.innerHTML = C_start_second_1_1;
@@ -216,7 +339,7 @@ function buttonChangeOne() {
       contentB3.innerHTML = C_start_second_1_3;
       break;
 
-    //Button Klick auf Response: Choice 2, Button 3
+    //Button Klick auf Response: Start Choice 2, Button 3
     case C_start_first_resp_3:
       mainStory(C_start_second_resp_1);
       contentB1.innerHTML = C_start_second_1_1;
@@ -224,7 +347,7 @@ function buttonChangeOne() {
       contentB3.innerHTML = C_start_second_3;
       break;
 
-    //Button Klick auf Response: Choice 2_1-1, Button 1
+    //Button Klick auf Response: Start Choice 2, 1-1, Button 1
     case C_start_second_resp_1:
       mainStory(C_start_second_resp_1_1);
       contentB1.innerHTML = C_start_second_1_1_1;
@@ -232,7 +355,7 @@ function buttonChangeOne() {
       contentB3.innerHTML = C_start_second_1_1_3;
       break;
     
-    //Button Klick auf Response: Choice 2_1-2, Button 1
+    //Button Klick auf Response: Start Choice 2, 1-2, Button 1
     case C_start_second_resp_1_1:
     mainStory(C_start_second_resp_1_1_1);
     contentB1.innerHTML = C_start_second_1_1_1_1;
@@ -240,7 +363,7 @@ function buttonChangeOne() {
     contentB3.innerHTML = C_start_second_1_1_1_3;
     break;
 
-    //Button Klick auf Response: Choice 2_1-3, Button 1
+    //Button Klick auf Response: Start Choice 2, 1-3, Button 1
     case C_start_second_resp_1_1_1:
     mainStory(C_start_second_resp_1_1_1_1);
     contentB1.innerHTML = C_start_second_1_1_1_1_1;
@@ -248,7 +371,7 @@ function buttonChangeOne() {
     contentB3.innerHTML = C_start_second_1_1_1_1_3;
     break;
 
-    //Button Klick auf Response: Choice 2_1-4, Button 1
+    //Button Klick auf Response: Start Choice 2, 1-4, Button 1
     case C_start_second_resp_1_1_1_1:
     mainStory(C_start_second_resp_1_1_1_1_1);
     contentB1.innerHTML = '';
@@ -260,6 +383,32 @@ function buttonChangeOne() {
     //Button Klick bei Starttext 1_3, Button 1
     case C_start_third_start:
       mainStory(C_start_third_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Starttext 1_4, Button 1
+    case C_start_fourth_start:
+      mainStory(C_start_fourth_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 4 Choice 1, B2, Button 1
+    case C_start_fourth_resp_2:
+      mainStory(C_start_fourth_resp_2_1);
+      contentB1.innerHTML = C_start_fourth_2_1_1;
+      contentB2.innerHTML = C_start_fourth_2_1_2;
+      contentB3.innerHTML = C_start_fourth_2_1_3;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 4 Choice 1, B2-1, Button 1
+    case C_start_fourth_resp_2_1:
+      mainStory(C_start_fourth_resp_2_1_1);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
@@ -340,6 +489,42 @@ function buttonChangeTwo() {
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
       break;
+
+    //Button Klick bei Starttext 1_3, Button 2
+    case C_start_third_start:
+      mainStory(C_start_third_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Starttext 1_4, Button 2
+    case C_start_fourth_start:
+      mainStory(C_start_fourth_resp_2);
+      contentB1.innerHTML = C_start_fourth_2_1;
+      contentB2.innerHTML = C_start_fourth_2_2;
+      contentB3.innerHTML = C_start_fourth_2_3;
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 4 Choice 1, B2, Button 2
+    case C_start_fourth_resp_2:
+      mainStory(C_start_fourth_resp_2_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 4 Choice 1, B2-1, Button 2
+    case C_start_fourth_resp_2_1:
+      mainStory(C_start_fourth_resp_2_1_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
   }
     }
 
@@ -353,7 +538,9 @@ function buttonChangeThree() {
       contentB1.innerHTML = C_start_second_1;
       contentB2.innerHTML = C_start_second_2;
       contentB3.innerHTML = C_start_second_3;
-      uhCounter = uhCounter + 1;
+
+      uhCounter++;
+      console.log(uhCounter);
       break;
 
     ////Funktionalitaet von Button 3 wenn bei Choice 1 Button 1 geklickt wurde
@@ -381,7 +568,9 @@ function buttonChangeThree() {
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
-      uhCounter = uhCounter + 1;
+
+      uhCounter++;
+      console.log(uhCounter);
       break;
 
     //Choice 2_1-1, Button 3
@@ -414,6 +603,48 @@ function buttonChangeThree() {
     //Choice 2_1-4, Button 3
     case C_start_second_resp_1_1_1_1:
       mainStory(C_start_second_resp_1_1_1_1_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Starttext 1_3, Button 3
+    case C_start_third_start:
+      mainStory(C_start_third_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Starttext 1_4, Button 3
+    case C_start_fourth_start:
+      mainStory(C_start_fourth_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Response: Start Sekt. 4 Choice 1, B2, Button 3
+    case C_start_fourth_resp_2:
+      mainStory(C_start_fourth_resp_2_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 4 Choice 1, B2-1, Button 3
+    case C_start_fourth_resp_2_1:
+      mainStory(C_start_fourth_resp_2_1_3);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
