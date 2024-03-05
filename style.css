@@ -1,11 +1,9 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    /*background-color: rgb(41, 41, 40);*/
-    background-color: lightslategray;
-    font-family: 'Times New Roman', Arial, serif;
-
+    grid-template-rows: max-content; 
+    background-color: rgb(41, 41, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Login*/
@@ -23,8 +21,12 @@ a{color:inherit;text-decoration:none}
     height: 100%;
 }
 
+.centerButton{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
 .login-html{
-    background-color: lightcoral;
     margin: 5% auto 5% auto;
     width: 60%;
     height: 60%;
@@ -125,8 +127,69 @@ a{color:inherit;text-decoration:none}
 	text-align:center;
 }
 
-/*Game*/
+/*starting page*/
+/*images*/
 
+.image{
+    max-width: 100%;
+    height: auto;
+}
+
+.bar{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.imprisoned{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+/*Text styling*/
+.title{
+    text-shadow: 
+    1px 1px #1b2ef7, 
+    2px 2px #1b2ef7,
+    3px 3px #1b2ef7,
+    4px 4px #1b2ef7;
+    text-align: center;
+    color:  #a5def2;  
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+ /*animation for title*/
+h1{
+    transform: scale(0.9);
+    animation: bop 1s 0.2s cubic-bezier(0.175, 0.888, 0.32, 1.125) forwards infinite alternate;
+}
+
+@keyframes bop{
+    0% { 
+        transform: scale(0.9);
+    }
+
+    80%, 
+    100% {
+        transform: scale(1) rotateZ(-0.3deg) ;
+    }
+}
+
+.intro{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: end; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+
+p{
+    color: white;
+}
+
+
+/*Game styling*/
 .photo{
     padding: 10px;
 }
@@ -138,7 +201,7 @@ a{color:inherit;text-decoration:none}
     background-color: #ffa4b6;
     /*height: fit-content*/
     border-radius: 15px;
-    padding: 0 15px 0 15px;
+    padding: 10px;
 }
 
 .decisions{
@@ -149,10 +212,11 @@ a{color:inherit;text-decoration:none}
 
 button{
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     border: none;
-    background-color: #a5def2 ;
+    background-color: #a5def2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #buttonContinue {
@@ -173,6 +237,7 @@ button:hover{
 .loginButton{
   width: 100px;
   height: 50px;
+  margin-left: 15px; 
 }
 
 /* Handy */
