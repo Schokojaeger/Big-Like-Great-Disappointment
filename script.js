@@ -2,6 +2,8 @@ let playername = '';
 
 let uhCounter = 0;
 
+let free = false;
+
 let conti = 'Continue';
 
 let contentContinue = document.getElementById("buttonContinue");
@@ -93,12 +95,50 @@ let C_start_fourth_3 = '(“Uh…..uh…..uhhhh….”)';
 
 let C_start_fifth_start = '“There are usually three things you can reply with, for anything another person says. You just have to find out which is the right one.”';
 
-            
-document.getElementById("story").innerHTML = startText;
+let C_start_fifth_1 = '(“Why only three?”)';
+  let C_start_fifth_resp_1 = '“All good things come in threes, dummy”';
 
-document.getElementById("buttonOne").innerHTML = C_start_first_1;
-document.getElementById("buttonTwo").innerHTML = C_start_first_2;
-document.getElementById("buttonThree").innerHTML = C_start_first_3;
+let C_start_fifth_2 = '(“Sounds doable.”)';
+  let C_start_fifth_resp_2 = '“That’s what I like to hear.”';
+
+let C_start_fifth_3 = '(“Uhhhh…….uhhh……..uhmmmmmm”)';
+  let C_start_fifth_resp_3 = '“That’s definitely not the right option.”';
+
+let C_start_close = '“Now I know that I might be asking a lot from a Smoothbrain like you, so I got you a training partner who was more than happy to escort me today. I had them wait in the basement to not overwhelm you right off the bat. Go down and talk to them.”';
+
+
+
+//Basement
+let C_basement_start = 'You arrive in your basement. It’s dark and smells like old cement mixed with mold. You turn on the light and see a slim woman crouching by the wall. She’s attached to the wall by a chain that’s wrapped around her left arm.<br><br>She has long, dirty and fuzzy, blonde hair and is wearing an equally dirty dress. She seems to wear some makeup as well, though it’s ruined from all the tears running down her face. She’s just sitting there, wailing and crying.<br><br>“HEEEEEELP!!!!” She screams out, obviously in despair.<br><br>You approach her and she flinches, getting even closer to the wall like she’s trying to run away through it. “No! Please! Get away from me!”';
+
+let C_basement_start_1 = '(“Well hi there beautiful”)';
+  let C_basement_start_resp_1 = '“NOO! PLEASE I DON’T WANNA, JUST LET ME GO!”';
+
+let C_basement_start_2 = '(“What the fuck is going on down here?”)';
+  let C_basement_start_resp_2 = '“Some man came up behind me, put a bag over my head and dragged me into his car. He mumbled something about dates and multiple choice, that I’ll be “The perfect training dummy”. I don’t know why I’m here, what have I done to deserve this? Please just let me go!”';
+    let C_basement_start_2_1 = '(“I don’t really know what that guy wants from me either. Look, I’ll just help you out of those shackles. This is insane.”)';
+      let C_basement_start_resp_2_1 = '“Oh god, thank you. I want to go home.”';
+        let C_basement_start_2_1_1 = '(Free her “No problem. Hey, you mind if we go out at some point?”)';
+          let C_basement_start_resp_2_1_1 = '“You’ve got to be kidding me.”<br><br>She runs away.';
+        let C_basement_start_2_1_2 = '(“On second thought, I still need you for something.”)';
+          let C_basement_start_resp_2_1_2 = '“No, please. I’m scared.”';
+        let C_basement_start_2_1_3 = '(Free her “Uh…..uhhhhhh…….uughhhhhh”)';
+          let C_basement_start_resp_2_1_3 = '“Stop! You’re scaring me!”<br>She pushes you away and runs upstairs.';
+    let C_basement_start_2_2 = '(“Oh I see, I guess that makes sense. It’s really nice of you to go along with all of this. I suppose there really are still some good people out there.“)';
+      let C_basement_start_resp_2_2 = '“What?!! No!! I don’t want to be here! Please let me out!!“';
+    let C_basement_start_2_3 = '(“Uhhhhhh……...uhhhhhhhhhhh……...uhhhhh“)';
+      let C_basement_start_resp_2_3 = '“Please! You’re creeping me out! Just let me go!“';
+
+
+let C_basement_start_3 = '(“Uhhhhhhhh………uhhhhhhhhh………..ughghhhhhh….”)';
+  let C_basement_start_resp_3 = '“NO! PLEASE GOD!! STAY AWAY FROM ME!!!”';
+  
+  
+document.getElementById("story").innerHTML = C_basement_start;
+
+document.getElementById("buttonOne").innerHTML = C_basement_start_1;
+document.getElementById("buttonTwo").innerHTML = C_basement_start_2;
+document.getElementById("buttonThree").innerHTML = C_basement_start_3;
 
 function mainStory(str){
     document.getElementById("story").innerHTML = str;
@@ -273,39 +313,74 @@ function buttonChangeContinue(textContinue) {
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-2
     case C_start_fourth_resp_2_2:
-    mainStory(C_start_fifth_start);
-    contentB1.innerHTML = 'test1';
-    contentB2.innerHTML = 'test2';
-    contentB3.innerHTML = 'test3';
-    contentContinue.innerHTML = 'filler';
-    break;
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-3
     case C_start_fourth_resp_2_3:
-    mainStory(C_start_fifth_start);
-    contentB1.innerHTML = 'test1';
-    contentB2.innerHTML = 'test2';
-    contentB3.innerHTML = 'test3';
-    contentContinue.innerHTML = 'filler';
-    break;
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
 
     //Continue für Response Start Sekt. 4 Choice 1, Button 2
     case C_start_fourth_resp_2:
-    mainStory(C_start_fifth_start);
-    contentB1.innerHTML = 'test1';
-    contentB2.innerHTML = 'test2';
-    contentB3.innerHTML = 'test3';
-    contentContinue.innerHTML = 'filler';
-    break;
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
 
     //Continue für Response Start Sekt. 4 Choice 1, Button 3
     case C_start_fourth_resp_3:
-    mainStory(C_start_fifth_start);
-    contentB1.innerHTML = 'test1';
-    contentB2.innerHTML = 'test2';
-    contentB3.innerHTML = 'test3';
-    contentContinue.innerHTML = 'filler';
-    break;
+      mainStory(C_start_fifth_start);
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Continue für Response Start Sekt. 5 Choice 1, Button 1
+    case C_start_fifth_resp_1:
+      mainStory(C_start_close);
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Continue für Response Start Sekt. 5 Choice 1, Button 2
+    case C_start_fifth_resp_2:
+      mainStory(C_start_close);
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Continue für Response Start Sekt. 5 Choice 1, Button 3
+    case C_start_fifth_resp_3:
+      mainStory(C_start_close);
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Continue zu Basement
+    case C_start_close:
+      mainStory(C_basement_start);
+      contentB1.innerHTML = C_basement_start_1;
+      contentB2.innerHTML = C_basement_start_2;
+      contentB3.innerHTML = C_basement_start_3;
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Continue nach oben für Befreien Option 1
+    case C_basement_start_resp_2_1_1:
+      mainStory('noch nicht eingefügt');
+      contentB1.innerHTML = 'test';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      break;
   }
 }
 
@@ -343,8 +418,8 @@ function buttonChangeOne() {
     case C_start_first_resp_3:
       mainStory(C_start_second_resp_1);
       contentB1.innerHTML = C_start_second_1_1;
-      contentB2.innerHTML = C_start_second_2;
-      contentB3.innerHTML = C_start_second_3;
+      contentB2.innerHTML = C_start_second_1_2;
+      contentB3.innerHTML = C_start_second_1_3;
       break;
 
     //Button Klick auf Response: Start Choice 2, 1-1, Button 1
@@ -413,6 +488,42 @@ function buttonChangeOne() {
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 5 Choice 1, Button 1
+    case C_start_fifth_start:
+      mainStory(C_start_fifth_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Basement Start, Button 1
+    case C_basement_start:
+      mainStory(C_basement_start_resp_1);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Button Klick bei Response: Basement Start, B2, Button 1
+    case C_basement_start_resp_2:
+      mainStory(C_basement_start_resp_2_1);
+      contentB1.innerHTML = C_basement_start_2_1_1;
+      contentB2.innerHTML = C_basement_start_2_1_2;
+      contentB3.innerHTML = C_basement_start_2_1_3;
+      break;
+
+    //Button Klick bei Response: Basement Start, B2-1, Button 1
+    case C_basement_start_resp_2_1:
+      mainStory(C_basement_start_resp_2_1_1);
+      contentB1.innerHTML = 'test';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = conti;
+      free = true;
       break;
     }
   }
@@ -524,6 +635,39 @@ function buttonChangeTwo() {
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 5 Choice 1, Button 2
+    case C_start_fifth_start:
+      mainStory(C_start_fifth_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Basement Start, Button 2
+    case C_basement_start:
+      mainStory(C_basement_start_resp_2);
+      contentB1.innerHTML = C_basement_start_2_1;
+      contentB2.innerHTML = C_basement_start_2_2;
+      contentB3.innerHTML = C_basement_start_2_3;
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    //Button Klick bei Response: Basement Start, B2, Button 2
+    case (C_basement_start_resp_2):
+      mainStory(C_basement_start_resp_2_2);
+      contentB1.innerHTML = 'test';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      break;
+    
+    case (C_basement_start_resp_2_1):
+      mainStory(C_basement_start_resp_2_1_2);
+      contentB1.innerHTML = 'test';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
       break;
   }
     }
@@ -649,6 +793,42 @@ function buttonChangeThree() {
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Response: Start Sekt. 5 Choice 1, Button 3
+    case C_start_fifth_start:
+      mainStory(C_start_fifth_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Response: Basement Start, Button 1
+    case C_basement_start:
+      mainStory(C_basement_start_resp_3);
+      contentB1.innerHTML = 'test1';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = 'filler';
+      break;
+
+    case (C_basement_start_resp_2):
+      mainStory(C_basement_start_resp_2_3);
+      contentB1.innerHTML = 'test';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      break;
+
+    case (C_basement_start_resp_2_1):
+      mainStory(C_basement_start_resp_2_1_3);
+      contentB1.innerHTML = 'test';
+      contentB2.innerHTML = 'test2';
+      contentB3.innerHTML = 'test3';
+      contentContinue.innerHTML = conti;
+      free = true;
       break;
   }
     }
