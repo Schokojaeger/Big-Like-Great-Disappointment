@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: max-content; 
     background-color: rgb(41, 41, 40);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -154,9 +154,11 @@ a{color:inherit;text-decoration:none}
     4px 4px #1b2ef7;
     text-align: center;
     color:  #a5def2;  
+    margin-block: 0;
+    margin-inline: 0;
 }
 
- /*animation for h2*/
+ /*animation for title*/
 h1{
     transform: scale(0.9);
     animation: bop 1s 0.2s cubic-bezier(0.175, 0.888, 0.32, 1.125) forwards infinite alternate;
@@ -179,6 +181,7 @@ h1{
     align-self: end; 
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 70px;
 }
 
 p{
