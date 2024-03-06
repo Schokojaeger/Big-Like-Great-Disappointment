@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: max-content; 
+    grid-template-rows: max-content 55% max-content; 
     background-color: rgb(41, 41, 40);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -18,7 +18,7 @@ a{color:inherit;text-decoration:none}
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .centerButton{
@@ -29,11 +29,11 @@ a{color:inherit;text-decoration:none}
 .login-html{
     margin: 5% auto 5% auto;
     width: 60%;
-    height: 60%;
     border-radius: 10px;
-    padding:90px 70px 50px 70px;
+    padding:50px 70px 90px 70px;
     background:rgba(40,57,101,.9);
-    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),
+                0 17px 50px 0 rgba(0,0,0,.19);
 }
 
 .login-html .sign-in-htm,
@@ -198,7 +198,7 @@ p{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: #ffa4b6;
-    /*height: fit-content*/
+    height: auto; 
     border-radius: 15px;
     padding: 10px;
 }
@@ -210,6 +210,7 @@ p{
 }
 
 button{
+    display: block;
     border-radius: 10px;
     padding: 15px;
     margin: 10px 0;
