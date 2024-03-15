@@ -52,12 +52,12 @@ a{color:inherit;text-decoration:none}
 .login-form .group .check{
 	display:none;
 }
-.login-html .tab,
+.login-html .tab, 
 .login-form .group .label,
-.login-form .group .button{
+.login-form .group .button{ 
 	text-transform:uppercase;
 }
-.login-html .tab{
+.login-html .tab {
 	font-size:22px;
 	margin-right:15px;
 	padding-bottom:5px;
@@ -210,15 +210,6 @@ p{
     margin: 25px 0;
 }
 
-button{
-    display: block;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    background-color: #a5def2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 #buttonContinue {
     position: absolute;
@@ -235,10 +226,24 @@ button:hover{
     background-color: #89cff1;
 }
 
-.loginButton{
-  width: 100px;
-  height: 50px;
-  margin-left: 15px; 
+/*button*/
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 15px;
+    border: none;
+    background-color: #a5def2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-size{
+    width: max-content;
+}
+
+.close-btn{
+    background-color: #ffa4b6;
 }
 
 /* Handy */

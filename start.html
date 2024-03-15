@@ -10,12 +10,12 @@
 </head>
 <body>
     <!--Login Button-->
-    <button class="loginButton centerButton" onclick="document.getElementById('login').style.display='block'">Login</button>
+    <button class="btn centerButton" onclick="document.getElementById('login').style.display='block'">Login</button>
 
     <!--Login-->
     <div id="login" class="login-wrap">
         <div class="login-html">
-            <button class="close-m" id="close" onclick="closeLogin()">&times;</button>
+            <button class="close-btn" id="close" onclick="closeLogin()">&times;</button>
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
@@ -87,9 +87,9 @@
         <p>
             Have you become curious? Then try your luck!
         </p>
-        <button onclick="choosenName = document.getElementById('choosenName').value; alert(choosenName);">choose your name wisely</button>
+        <button class="btn btn-size" onclick="choosenName = document.getElementById('choosenName').value; alert(choosenName);">choose your name wisely</button>
         <input type="text" name="choosenName" id="choosenName" value="">
-        <button><a href="index.html">enjoy your journey</a></button>
+        <button class="btn btn-size"><a href="index.html">enjoy your journey</a></button>
     </div>
 
 

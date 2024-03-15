@@ -9,11 +9,12 @@
 </head>
 <body>
     <!--Login Button-->
-    <button class="loginButton" onclick="document.getElementById('login').style.display='block'">Login</button>
+    <button class="btn" onclick="document.getElementById('login').style.display='block'">Login</button>
 
     <!--Login-->
     <div id="login" class="login-wrap">
         <div class="login-html">
+            <button class="close-btn" id="close" onclick="closeLogin()">&times;</button>
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
@@ -68,15 +69,15 @@
         <!--create Function to change the photo, if pictures are added-->
         <div class="photo">bild</div>
         <div id="story"></div>
-        <button id="buttonContinue" onclick="buttonChangeContinue()">
+        <button class="btn" id="buttonContinue" onclick="buttonChangeContinue()">
                 Filler
         </button>
     </div>
 
     <div class="decisions">
-        <button id="buttonOne" onclick="buttonChangeOne()"></button>
-        <button id="buttonTwo" onclick="buttonChangeTwo()"></button>
-        <button id="buttonThree" onclick="buttonChangeThree()"></button>
+        <button class="btn btn-size" id="buttonOne" onclick="buttonChangeOne()"></button>
+        <button class="btn btn-size" id="buttonTwo" onclick="buttonChangeTwo()"></button>
+        <button class="btn btn-size" id="buttonThree" onclick="buttonChangeThree()"></button>
     </div>
 
     <script src="script.js"></script>
