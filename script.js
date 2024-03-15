@@ -832,4 +832,10 @@ function buttonChangeThree() {
       break;
   }
     }
-  
+
+
+// Hide the login container per click on X
+function closeLogin(){
+  var loginForm = document.getElementById("login"); 
+  loginForm.style.display = "none"; 
+}

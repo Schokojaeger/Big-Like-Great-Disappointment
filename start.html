@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Starting point...</title>
+
 </head>
 <body>
     <!--Login Button-->
@@ -14,6 +15,7 @@
     <!--Login-->
     <div id="login" class="login-wrap">
         <div class="login-html">
+            <button class="close-m" id="close" onclick="closeLogin()">&times;</button>
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
@@ -29,9 +31,6 @@
                     </div>
                     <div class="group">
                         <input type="submit" class="button" value="Sign In">
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" value="continue as a customer">
                     </div>
                     <div class="foot-lnk">
                         <a href="#forgot">Forgot Password?</a>

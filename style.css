@@ -28,9 +28,9 @@ a{color:inherit;text-decoration:none}
 
 .login-html{
     margin: 5% auto 5% auto;
-    width: 60%;
+    width: 70%;
     border-radius: 10px;
-    padding:50px 70px 90px 70px;
+    padding:50px 40px 90px 40px;
     background:rgba(40,57,101,.9);
     box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),
                 0 17px 50px 0 rgba(0,0,0,.19);
@@ -79,6 +79,12 @@ a{color:inherit;text-decoration:none}
 .login-form .group{
 	margin-bottom:15px;
 }
+
+.label{
+    padding-bottom: 5px; 
+}
+
+
 .login-form .group .label,
 .login-form .group .input,
 .login-form .group .button{
@@ -236,7 +242,6 @@ button:hover{
 }
 
 /* Handy */
-
 @media screen and (max-width: 900px){
     body{
         grid-template-columns: 10% 1fr 10%;
