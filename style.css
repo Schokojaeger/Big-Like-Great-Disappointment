@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: max-content 55% max-content; 
+    grid-template-rows: 1fr 1fr; 
     background-color: rgb(41, 41, 40);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -262,33 +262,32 @@ p{
 /* Handy */
 @media screen and (max-width: 900px){
     body{
-        grid-template-columns: 10% 1fr 10%;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
         background-color: blue;
     }
 
-    .loginButton{
-        grid-column: 2 / 3;
+    .btn-mobile{
+        grid-row: 2/3; 
     }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1050px){
     body{
         background-color: rebeccapurple;
-        grid-template-columns: 15% 1fr 15%;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
     }
-
-    .loginButton{
-        grid-column: 2 / 3;
+    .btn-mobile{
+        grid-row: 2/3; 
     }
 }
 
 @media screen and (min-width: 1050px) and (max-width: 1500px){
     body{
         background-color: lightslategray;
-        grid-template-columns: 20% 1fr 20%;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
     }
-    .loginButton{
-        grid-column: 2 / 3;
+    .btn-mobile{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2; /*does not work????*/
     }
-
 }
