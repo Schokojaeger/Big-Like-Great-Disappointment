@@ -235,11 +235,10 @@ p{
 
 /*button*/
 .btn{
-    width: 100px;
     height: 50px;
     border-radius: 10px;
-    padding: 15px;
-    margin: 10px 15px;
+    padding: 10px;
+    margin: 10px;
     border: none;
     background-color: #a5def2;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -250,7 +249,7 @@ p{
 }
 
 .btn-size{
-    width: max-content;
+    width: fit-content;
 }
 
 .inputField{
@@ -263,29 +262,65 @@ p{
 /* Handy */
 @media screen and (max-width: 900px){
     body{
-        grid-template-columns: 0.5fr 1fr 0.5fr;
+        display: block;
         background-color: blue;
     }
 
+    .image{
+        width: 30%;
+    }
+
+    .intro{
+        margin: 20px;
+    }
+
+    .mobile-btn{
+        width: 90%;
+    }
+
+    .inputField{
+        margin-left: 10px
+    }
+
+    
 }
 
 @media screen and (min-width: 900px) and (max-width: 1050px){
     body{
-        background-color: rebeccapurple;
-        grid-template-columns: 0.5fr 1fr 0.5fr;
+        display: block;
+        background-color: green;
     }
-    .btn-mobile{
-        grid-row: 2/3; 
+
+    .image{
+        width: 30%;
     }
+
+    .intro{
+        margin: 20px;
+    }
+
+    .mobile-btn{
+        width: 30%;
+    }
+
 }
 
 @media screen and (min-width: 1050px) and (max-width: 1500px){
     body{
-        background-color: lightslategray;
-        grid-template-columns: 0.5fr 1fr 0.5fr;
+        display: block;
+        background-color: yellowgreen;
     }
-    .btn-mobile{
-        grid-row: 2 / 3;
-        grid-column: 1 / 2; /*does not work????*/
+
+    .image{
+        width: 30%;
     }
+
+    .intro{
+        margin: 20px;
+    }
+
+    .mobile-btn{
+        width: 30%;
+    }
+
 }
