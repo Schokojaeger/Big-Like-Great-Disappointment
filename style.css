@@ -210,24 +210,31 @@ p{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: #ffa4b6;
-    height: auto; 
+    height: fit-content; 
     border-radius: 15px;
     padding: 10px;
 }
 
 .decisions{
-    grid-row:3 / 4;
+    grid-row: 3 / 4;
     grid-column: 2 / 3;
     margin: 25px 0;
 }
-
-
-#buttonContinue {
-    position: absolute;
-    bottom: 0;
-    right: 10px;
+.btn-fit{
+    display:block;
+    width: fit-content;
 }
 
+.btn-size{
+    width: 30%;
+}
+
+/*displays the botton on the right side*/
+.continue-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
 
 #story {
     text-align: center;
@@ -236,7 +243,6 @@ p{
 /*button*/
 .btn{
     height: 50px;
-    width: 30%;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -244,6 +250,8 @@ p{
     background-color: #a5def2;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
 
 .btn:hover{
     background-color: #89cff1;

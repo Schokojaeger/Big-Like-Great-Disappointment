@@ -9,7 +9,7 @@
 </head>
 <body>
     <!--Login Button-->
-    <button class="btn" onclick="document.getElementById('login').style.display='block'">Login</button>
+    <button class="btn mobile-btn btn-size" onclick="document.getElementById('login').style.display='block'">Login</button>
 
     <!--Login-->
     <div id="login" class="login-wrap">
@@ -69,15 +69,18 @@
         <!--create Function to change the photo, if pictures are added-->
         <div class="photo">bild</div>
         <div id="story"></div>
-        <button class="btn" id="buttonContinue" onclick="buttonChangeContinue()">
+        <div class="continue-btn">
+            <button class="btn btn-size" id="buttonContinue" onclick="buttonChangeContinue()">
                 Filler
         </button>
+        </div>
+        
     </div>
 
     <div class="decisions">
-        <button class="btn btn-size" id="buttonOne" onclick="buttonChangeOne()"></button>
-        <button class="btn btn-size" id="buttonTwo" onclick="buttonChangeTwo()"></button>
-        <button class="btn btn-size" id="buttonThree" onclick="buttonChangeThree()"></button>
+        <button class="btn btn-fit" id="buttonOne" onclick="buttonChangeOne()"></button>
+        <button class="btn btn-fit" id="buttonTwo" onclick="buttonChangeTwo()"></button>
+        <button class="btn btn-fit" id="buttonThree" onclick="buttonChangeThree()"></button>
     </div>
 
     <script src="script.js"></script>
