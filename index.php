@@ -22,7 +22,7 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="window.location.href = 'logout.php';">Logout</button>
+    <button class="btn centerButton mobile-btn btn-size" onclick="window.location.href = 'logout.php';">Logout</button>
    
 
     <!--</*?php
@@ -32,7 +32,7 @@ session_start();
         <!--</*?php else: ?*/>
             <a href="start.php">sign up</a>-->
        <!-- </*?php endif?*/> -->
-       
+
     <!--Game-->
     <div class="main_story">
 
