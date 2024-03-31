@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="login-form">
                 <!--Sign-In-->
                 <form class="sign-in-htm" method="post">
-                    
+
                     <!--Login invalid-->
                     <?php if ($is_invalid): ?>
                     <em>Invalid login</em>
@@ -148,7 +148,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
    <div>
     <button class=" btn mobile-btn btn-size" onclick="choosenName = document.getElementById('choosenName').value; alert(choosenName);">choose your name wisely</button>
     <input class="inputField mobile-btn" type="text" name="choosenName" id="choosenName" value="" placeholder="Your Name">
-    <button class=" btn mobile-btn btn-size"><a href="freegame.html">enjoy your journey</a></button>
+    <button class=" btn mobile-btn btn-size"><a href="freegame.php">enjoy your journey</a></button>
     </div>
 
 

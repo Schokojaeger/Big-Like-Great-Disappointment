@@ -1,15 +1,44 @@
 <?php
-//starts a session or resume an existing session
-session_start(); 
+$is_invalid = false;
 
-//if we want to get the username from the db
-/*if(isset($_SESSION["user_id"])){
-    $mysqli = require __DIR__ . "/database.php"; 
-    $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
+//checks if the user is registered
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    // selected all user and checks the email if its the same as the one in the db
+    $sql = sprintf("SELECT * FROM user
+                    WHERE email = '%s'",
+                   $mysqli->real_escape_string($_POST["email"]));
+    
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+    
+    // if email is found > check password 
+    if($user){
+         // to make sure that the hash_password matches the plain password use password verify function
+         // it returns true = match / false = not matching
+         if(password_verify($_POST["password"], $user["password_hash"])){
+            // start login session 
+            session_start(); 
+            
+            session_regenerate_id(); 
 
-    $result = $mysqli->query($sql); 
-    $user = $result->fetch_assoc(); 
-} */
+            //store user id in the session super global 
+            // by default these values are stored in files on the server
+            // tipp: save small amount of information in a session
+            $_SESSION["user_id"] = $user["id"]; 
+
+            header("Location: index.php"); 
+            exit; 
+         }
+
+    }
+
+    $is_invalid = true;
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +53,9 @@ session_start();
     <script src="js/validation.js" defer></script>
 </head>
 <body>
-<!--Login Button-->
-<button class="btn centerButton mobile-btn btn-size" onclick="document.getElementById('login').style.display='block'">Login</button>
+    <!--Login Button-->
+    <button class="btn centerButton mobile-btn btn-size" onclick="document.getElementById('login').style.display='block'">Login</button>
 
-<!--Login-->
     <!--Login-->
     <div id="login" class="login-wrap">
         <div class="login-html">
@@ -40,11 +68,10 @@ session_start();
                 <!--Sign-In-->
                 <form class="sign-in-htm" method="post">
 
-                 <!--Login invalid-->
+                    <!--Login invalid-->
                     <?php if ($is_invalid): ?>
                     <em>Invalid login</em>
                     <?php endif; ?>
-
 
                     <div class="group">
                         <label for="email" class="label">E-Mail</label>
