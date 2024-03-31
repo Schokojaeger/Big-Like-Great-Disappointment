@@ -20,7 +20,8 @@ if(isset($_SESSION["user_id"])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button href="logout.php">Logout</button>
+    <button onclick="window.location.href = 'logout.php';">Logout</button>
+   
 
     <?php
     if(isset($_SESSION["user_id"])): ?>  <!--delete this part afterwards-->
