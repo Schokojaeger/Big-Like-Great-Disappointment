@@ -1,5 +1,5 @@
 <?php
-//starts a session
+//starts a session or resume an existing session
 session_start(); 
 if(isset($_SESSION["user_id"])){
     $mysqli = require __DIR__ . "/database.php"; 
@@ -20,7 +20,14 @@ if(isset($_SESSION["user_id"])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button>Logout</button>
+    <button href="logout.php">Logout</button>
+
+    <?php
+    if(isset($_SESSION["user_id"])): ?>  <!--delete this part afterwards-->
+        <p>you are logged in </p>
+        <?php else: ?>
+            <a href="start.php">sign up</a>
+        <?php endif?>
     <!--Game-->
     <div class="main_story">
 

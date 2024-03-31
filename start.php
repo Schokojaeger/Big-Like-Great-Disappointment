@@ -25,6 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             session_regenerate_id(); 
 
+            //store user id in the session super global 
+            // by default these values are stored in files on the server
+            // tipp: save small amount of information in a session
             $_SESSION["user_id"] = $user["id"]; 
 
             header("Location: index.php"); 

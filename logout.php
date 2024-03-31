@@ -2,6 +2,6 @@
  session_start();
  session_destroy(); // login session will end 
  
- header("Location: index.php"); 
+ header("Location: start.php"); 
  exit; 
 ?>
