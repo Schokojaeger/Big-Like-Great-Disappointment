@@ -48,6 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Starting point...</title>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
 
 </head>
 <body>

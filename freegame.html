@@ -6,6 +6,8 @@
     <!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
     <title>Crush Time</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
 </head>
 <body>
 <!--Login Button-->
@@ -22,10 +24,6 @@
         <div class="login-form">
             <!--Sign-In-->
             <form class="sign-in-htm" method="post">
-                <!--Login invalid-->
-                <?php if ($is_invalid): ?>
-                <em>Invalid login</em>
-                <?php endif; ?>
 
                 <div class="group">
                     <label for="email" class="label">E-Mail</label>
