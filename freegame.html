@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Login Button-->
-    <button class="btn mobile-btn btn-size" onclick="document.getElementById('login').style.display='block'">Login</button>
+<!--Login Button-->
+<button class="btn centerButton mobile-btn btn-size" onclick="document.getElementById('login').style.display='block'">Login</button>
 
-   <!--Login-->
-   <div id="login" class="login-wrap">
+<!--Login-->
+<div id="login" class="login-wrap">
     <div class="login-html">
         <button class="close-btn" id="close" onclick="closeLogin()">&times;</button>
         <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
@@ -23,6 +23,9 @@
             <!--Sign-In-->
             <form class="sign-in-htm" method="post">
                 <!--Login invalid-->
+                <?php if ($is_invalid): ?>
+                <em>Invalid login</em>
+                <?php endif; ?>
 
                 <div class="group">
                     <label for="email" class="label">E-Mail</label>
@@ -42,7 +45,7 @@
 
 
             <!--Sign-Up-->
-            <form action="" method="post" class="sign-up-htm" id="signup" novalidate>
+            <form action="process-signup.php" method="post" class="sign-up-htm" id="signup" novalidate>
                 <div class="group">
                     <label for="name" class="label">Username</label>
                     <input id="name" type="text" class="input" name="name">
@@ -94,4 +97,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

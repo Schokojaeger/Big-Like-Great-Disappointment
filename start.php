@@ -1,3 +1,42 @@
+<?php
+$is_invalid = false;
+
+//checks if the user is registered
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    // selected all user and checks the email if its the same as the one in the db
+    $sql = sprintf("SELECT * FROM user
+                    WHERE email = '%s'",
+                   $mysqli->real_escape_string($_POST["email"]));
+    
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+    
+    // if email is found > check password 
+    if($user){
+         // to make sure that the hash_password matches the plain password use password verify function
+         // it returns true = match / false = not matching
+         if(password_verify($_POST["password"], $user["password_hash"])){
+            // start login session 
+            session_start(); 
+            
+            session_regenerate_id(); 
+
+            $_SESSION["user_id"] = $user["id"]; 
+
+            header("Location: index.php"); 
+            exit; 
+         }
+
+    }
+
+    $is_invalid = true;
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +63,9 @@
                 <!--Sign-In-->
                 <form class="sign-in-htm" method="post">
                     <!--Login invalid-->
+                    <?php if ($is_invalid): ?>
+                    <em>Invalid login</em>
+                    <?php endif; ?>
 
                     <div class="group">
                         <label for="email" class="label">E-Mail</label>
@@ -43,7 +85,7 @@
 
 
                 <!--Sign-Up-->
-                <form action="" method="post" class="sign-up-htm" id="signup" novalidate>
+                <form action="process-signup.php" method="post" class="sign-up-htm" id="signup" novalidate>
                     <div class="group">
                         <label for="name" class="label">Username</label>
                         <input id="name" type="text" class="input" name="name">
@@ -100,7 +142,7 @@
    <div>
     <button class=" btn mobile-btn btn-size" onclick="choosenName = document.getElementById('choosenName').value; alert(choosenName);">choose your name wisely</button>
     <input class="inputField mobile-btn" type="text" name="choosenName" id="choosenName" value="" placeholder="Your Name">
-    <button class=" btn mobile-btn btn-size"><a href="index.html">enjoy your journey</a></button>
+    <button class=" btn mobile-btn btn-size"><a href="freegame.html">enjoy your journey</a></button>
     </div>
 
 
