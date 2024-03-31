@@ -59,7 +59,7 @@ $stmt->bind_param("sss",  // first argument is a string that contains characters
 
 // execute the statement and if the email already exist, show error msg
 if ($stmt->execute()) {
-    header("Location: index.html"); //redirect to this page and display it after sign up is successful
+    header("Location: index.php"); //redirect to this page and display it after sign up is successful
      exit; // exit ones the header is send
     
 } else {
@@ -69,5 +69,5 @@ if ($stmt->execute()) {
         die($mysqli->error . " " . $mysqli->errno);
     }
 }
-/** notes: call in the url: location/school-project/start.html to check if php is working or not */
+/** notes: call in the url: location/school-project/start.php to check if php is working or not */
 ?>
