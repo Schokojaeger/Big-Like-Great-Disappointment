@@ -1,13 +1,15 @@
 <?php
 //starts a session or resume an existing session
 session_start(); 
-if(isset($_SESSION["user_id"])){
+
+//if we want to get the username from the db
+/*if(isset($_SESSION["user_id"])){
     $mysqli = require __DIR__ . "/database.php"; 
     $sql = "SELECT * FROM user WHERE id = {$_SESSION["user_id"]}";
 
     $result = $mysqli->query($sql); 
     $user = $result->fetch_assoc(); 
-}
+} */
 ?>
 
 <!DOCTYPE html>
@@ -23,12 +25,14 @@ if(isset($_SESSION["user_id"])){
     <button onclick="window.location.href = 'logout.php';">Logout</button>
    
 
-    <?php
-    if(isset($_SESSION["user_id"])): ?>  <!--delete this part afterwards-->
-        <p>you are logged in </p>
-        <?php else: ?>
-            <a href="start.php">sign up</a>
-        <?php endif?>
+    <!--</*?php
+    if(isset($user)): ?>  checks the user
+    displays the username, can be deleted if not wanted/needed
+        <p></*?= htmlspecialchars($user["name"]) ?>*/ </p> -->
+        <!--</*?php else: ?*/>
+            <a href="start.php">sign up</a>-->
+       <!-- </*?php endif?*/> -->
+       
     <!--Game-->
     <div class="main_story">
 
