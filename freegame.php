@@ -84,9 +84,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <div class="group">
                         <button class="button">Sign In</button>
                     </div>
-                    <div class="foot-lnk">
-                        <a href="#forgot">Forgot Password?</a>
-                    </div>
                 </form>
 
 
