@@ -1,4 +1,4 @@
-let playername = '';
+let playername = 'testthatshit';
 
 let uhCounter = 0;
 
@@ -189,15 +189,60 @@ let C_back_second = '“Well, I don’t have another partner prepared for you, s
     let C_back_second_resp_2 = '“Bullshit, you have just clearly developed Stockholm Syndrome for your prison you call your “House””';
   let C_back_second_3 = '(“Uhhhh……uhm…….uhhhhhhhh”)';
     let C_back_second_resp_3 = '“Get that out of your system already, you sound like a zombie”';
+let C_back_end = '“We’ll have to make do with whatever you did learn down there, if anything. Just go to…...pffffffff……...a bar or something and start from there.”';
 
-//HIER FERTIG LETZTES MAL, ALS NÄCHSTES DAS NÄCHSTE KAPITEL
+let C_bar_start = 'You arrive at the classic, the good-old, the bar. Meeting place for depressed alcoholics in their mid 20s to mid 30s and the most uncreative, unoriginal location to put in your dating game.<br><br>You sit down at the bar. The Bartender comes up to you “What’s your poison?”';
+  let C_bar_start_1 = '(“Martini, shaken, not stirred”)';
+    let C_bar_start_resp_1 = '“Who the fuck stirs a Martini?”<br>After a short while, he comes back and hands you your Drink.';
+  let C_bar_start_2 = '(“Whisky, mixed with vodka and gin. Blue Energy-Drink, soda-pop, a teaspoon of brown sugar, spice, everything nice, sprinkles and a cherry on top”)';
+    let C_bar_start_resp_2 = '“…….Sir, are you alright?”<br><br>Regardless, he returns after a while and hands you your “Drink”. It looks absolutely revolting.';
+  let C_bar_start_3 = '(“UHHHHHH……..UHMM……UHH”)';
+    let C_bar_start_resp_3 = '“……….I’ll just get you a simple Cuba Libre.”';
 
+let C_bar_second = 'From the corner of your eye, you spot a good looking woman in a nice evening dress, short, brown hair, drinking Sex on the Beach with a little umbrella in it.<br><br>This is your chance! You take your alcoholic beverage and approach her.';
+  let C_bar_second_1 = '(Use a cheesy pickup line)';
+    let C_bar_second_resp_1 = 'Confidently, you start “Hey babe, are you free tonight? Because I have no money.”<br><br>She slaps you, spills her drink on your face and spits on you, then promptly leaves. How can you fuck up such an old line? Not that it would have worked but it’d still be better than this.<br><br>You’d better get out of here before it gets even more embarrassing.';
+  let C_bar_second_2 = '(“Hi, my name is ' + playername + '. How are you tonight”)';
+    let C_bar_second_resp_2 = '“Well hi there, I’m just fine and dandy.”';
+      let C_bar_second_2_1 = '(„Ain’t that nice. Do you mind if we talk for a bit?“)';
+        let C_bar_second_resp_2_1 = '“Why of course.”<br><br>You sit down, holding your Drink and say:';
+          let C_bar_second_2_1_1 = '(“So, what’s your name?”)';
+            let C_bar_second_resp_2_1_1 = '“Chloe”';
+              let C_bar_second_2_1_1_1 = '(“Chloe? Your parents must’ve not been that creative huh?”)';
+                let C_bar_second_resp_2_1_1_1 = '“How rude!”<br><br>She slaps you and leaves the bar without finishing her Drink. You’re not sure what you did wrong. Maybe she just had a bad day.<br><br>Now there’s nothing else to do here, might as well leave too.';
+              let C_bar_second_2_1_1_2 = '(“Nice to meet you Chloe. Sooooo, why are you here alone on such a beautiful friday night?”)';
+                let C_bar_second_resp_2_1_1_2 = '“It’s just too boring at home, I needed to get out of there and have some fun.”';
+                  let C_bar_second_2_1_1_2_1 = '(“Drinking alone in a bar is fun for you? That’s just pathetic if you ask me.”)';
+                    let C_bar_second_resp_2_1_1_2_1 = '“Screw you!” She slaps you and leaves the bar without finishing her Drink. If there’s something to take away from this encounter, it would probably be to not be too honest when talking to other people.<br><br>Since there is nothing else to do here now, you might as well just leave too.';
+                  let C_bar_second_2_1_1_2_2 = '(“I know what you mean. The pizza boxes and clothes just pile up and it starts to smell moldy when you don’t open your windows for a while. Your PC heats up and makes the air all dry and stuff.”)';
+                    let C_bar_second_resp_2_1_1_2_2 = 'She visibly recoils. “Yeah, haha. Hey, give me just a minute I have to fix my makeup.” You see her make her way to the restroom. Suddenly, you her a thump somewhere around the back of the building, then hasty footsteps. You wonder what that could be. After an hour of waiting, the bartender comes up to you and says “She’s gone bro, go home.” Defeated once again, you leave the bar.';
+                  let C_bar_second_2_1_1_2_3 = '("Uhhhhhhhhh......uh......uh.....uh....uhhh")';
+                    let C_bar_second_resp_2_1_1_2_3 = '“Are you alright there?” It seems like you’re once again taken over by  your carnal desire to sound like you just got a lobotomy. Since nothing else comes out of your mouth, she gets creeped out and leaves the bar without finishing her drink.<br><br>At some point, you regain consciousness and since she’s already gone, you also leave.';
+              let C_bar_second_2_1_1_3 = '(“Uhhhhhhm………uhhh……..mmmmmmmmhhh”)';
+                let C_bar_second_resp_2_1_1_3 = C_bar_second_resp_2_1_1_2_3;
+          let C_bar_second_2_1_2 = '("You wanna know how I got these scars?")';
+            let C_bar_second_resp_2_1_2 = '"What scars?"<br><br>"You see, my father was a Gamer, a really bad one. And one day, he loses way more than usual and gets very angry. So he takes his CS-GO knife replica and puts it up to my face"<br><br>You take the straw from her Cocktail and shove it in her mouth, then continue<br><br>"And he says "Why so-""<br><br>The woman shoves you away and you fall to the floor. She spits on you agressively and stomps out of the bar. You were just getting to the good part too.<br><br>The bartender comes up to you and politely, yet furiously asks you to leave his establishment. You do as he says.';
+          let C_bar_second_2_1_3 = '("Uhhhhh......uhmmmmmm.......uhhhhhhhhh")';
+            let C_bar_second_resp_2_1_3 = C_bar_second_resp_2_1_1_2_3;
+
+      let C_bar_second_2_2 = '(“Now that’s a pretty fucking weird name”)';
+        let C_bar_second_resp_2_2 = 'She gets up and slaps your dumbass head, then leaves the bar.<br><br>That is a pretty weird name though…<br><br>Since there’s nothing else to do, you also leave.';
+      let C_bar_second_2_3 = '(“Uhhhhhh……uhhhh…….uh……arghhh”)';
+        let C_bar_second_resp_2_3 = '"Oh, you are an insane person. And here I was hoping you were a decent guy."<br><br>She gulps down her drink in one go and leaves the bar. When you regain consciousness a while later, you notice she is long gone and decide to leave as well.<br><br>You should really do something about that habit of yours to just let out one continuous sound every once in a while.';
+  let C_bar_second_3 = '(“Uhhhhhh……uhhhh…….uh……arghhh”)';
+    let C_bar_second_resp_3 = 'She turns away from you and leaves without finishing her drink. It seems like you still have a long way to go before you can overcome your social anxiety……or you could just not pick the meme option.<br><br>Regardless, you leave the bar as well since there is nothing else to do now.';
+
+let C_alley_start = 'After the humiliation in that bar, you roam the streets, still disappointed by your incompetence. After a short while, you hear two loud bangs from around the corner. You decide to investigate.<br><br>You arrive at a curious scene. There are two people, a man and a woman, lying on the ground surrounded by blood and a young boy crying beside them. He’s nudging and shaking the woman while crying “Mommy!!”. You wonder who that little boy is and why he’s harassing that woman.<br><br>You approach the young man.';
+  let C_alley_start_1 = '(“Good evening there young lad. You’re pretty sharply dressed, looks real good on you. You have any plans for tonight?”)';
+  let C_alley_start_2 = '(“Hi there little man, what’s your name?”)';
+  let C_alley_start_3 = '(“Uhhhhhhhhhh……uh……”)';
+  //HIER LETZTES MAL AUFGEHÖRT, MUSST NOCH ALLE DREI ANTWORTMÖGLICHKEITEN IN DIE JEWEILIGEN BUTTONCHANGES EINBAUEN
   
-document.getElementById("story").innerHTML = C_back_start;
+document.getElementById("story").innerHTML = C_alley_start;
 
-document.getElementById("buttonOne").innerHTML = C_back_start_1;
-document.getElementById("buttonTwo").innerHTML = C_back_start_2;
-document.getElementById("buttonThree").innerHTML = C_back_start_3;
+document.getElementById("buttonOne").innerHTML = C_alley_start_1;
+document.getElementById("buttonTwo").innerHTML = C_alley_start_2;
+document.getElementById("buttonThree").innerHTML = C_alley_start_3;
 
 
 function mainStory(str){
@@ -626,23 +671,146 @@ function buttonChangeContinue(textContinue) {
 
     //Continue für Back Second Button 1
     case C_back_second_resp_1:
-      mainStory('noch nicht eingefügt');
+      mainStory(C_back_end);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
       break;
 
     //Continue für Back Second Button 2
     case C_back_second_resp_2:
-      mainStory('noch nicht eingefügt');
+      mainStory(C_back_end);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Continue für Back Second Button 3
+    case C_back_second_resp_3:
+      mainStory(C_back_end);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Continue zur Bar
+    case C_back_end:
+      mainStory(C_bar_start);
+      contentB1.innerHTML = C_bar_start_1;
+      contentB2.innerHTML = C_bar_start_2;
+      contentB3.innerHTML = C_bar_start_3;
+      break;
+
+    //Continue für Bar Start, Button 1
+    case C_bar_start_resp_1:
+      mainStory(C_bar_second);  
+      contentB1.innerHTML = C_bar_second_1;
+      contentB2.innerHTML = C_bar_second_2;
+      contentB3.innerHTML = C_bar_second_3;
+      break;
+
+    //Continue für Bar Start, Button 2
+    case C_bar_start_resp_2:
+      mainStory(C_bar_second);  
+      contentB1.innerHTML = C_bar_second_1;
+      contentB2.innerHTML = C_bar_second_2;
+      contentB3.innerHTML = C_bar_second_3;
+      break;
+
+    //Continue für Bar Start, Button 3
+    case C_bar_start_resp_3:
+      mainStory(C_bar_second);  
+      contentB1.innerHTML = C_bar_second_1;
+      contentB2.innerHTML = C_bar_second_2;
+      contentB3.innerHTML = C_bar_second_3;
+      break;
+
+    //Continue für Bar Choice 2, Button 1
+    case C_bar_second_resp_1:
+      mainStory(C_alley_start);  
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
       break;
 
-    //Continue für Back Second Button 3
-    case C_back_second_resp_3:
-      mainStory('noch nicht eingefügt');
+    //Continue für Bar Choice 2, B2-1-1-1
+    case C_bar_second_resp_2_1_1_1:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-1-1-2-1
+    case C_bar_second_resp_2_1_1_2_1:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-1-1-2-2
+    case C_bar_second_resp_2_1_1_2_2:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-1-1-2-3
+    case C_bar_second_resp_2_1_1_2_3:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-1-1-3
+    case C_bar_second_resp_2_1_1_3:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-1-2
+    case C_bar_second_resp_2_1_2:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-1-3
+    case C_bar_second_resp_2_1_3:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-2
+    case C_bar_second_resp_2_2:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B2-3
+    case C_bar_second_resp_2_3:
+      mainStory(C_alley_start);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      break;
+
+    //Continue für Bar Choice 2, B3
+    case C_bar_second_resp_3:
+      mainStory(C_alley_start);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
@@ -892,6 +1060,58 @@ function buttonChangeOne() {
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
       break;
+
+    //Button Klick bei Response: Bar Start, Button 1
+    case C_bar_start:
+      mainStory(C_bar_start_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, Button 1
+    case C_bar_second:
+      mainStory(C_bar_second_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1
+    case C_bar_second_resp_2:
+      mainStory(C_bar_second_resp_2_1);
+      contentB1.innerHTML = C_bar_second_2_1_1;
+      contentB2.innerHTML = C_bar_second_2_1_2;
+      contentB3.innerHTML = C_bar_second_2_1_3;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-1
+    case C_bar_second_resp_2_1:
+      mainStory(C_bar_second_resp_2_1_1);
+      contentB1.innerHTML = C_bar_second_2_1_1_1;
+      contentB2.innerHTML = C_bar_second_2_1_1_2;
+      contentB3.innerHTML = C_bar_second_2_1_1_3;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-1-1
+    case C_bar_second_resp_2_1_1:
+      mainStory(C_bar_second_resp_2_1_1_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //
+    case C_bar_second_resp_2_1_1_2:
+      mainStory(C_bar_second_resp_2_1_1_2_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
     }
   }
 
@@ -1134,6 +1354,58 @@ function buttonChangeTwo() {
     //Button Klick bei Back Second, Button 2
     case C_back_second:
       mainStory(C_back_second_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Start, Button 2
+    case C_bar_start:
+      mainStory(C_bar_start_resp_2);  
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, Button 2
+    case C_bar_second:
+      mainStory(C_bar_second_resp_2);
+      contentB1.innerHTML = C_bar_second_2_1;
+      contentB2.innerHTML = C_bar_second_2_2;
+      contentB3.innerHTML = C_bar_second_2_3;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-1
+    case C_bar_second_resp_2_1_1:
+      mainStory(C_bar_second_resp_2_1_1_2);
+      contentB1.innerHTML = C_bar_second_2_1_1_2_1;
+      contentB2.innerHTML = C_bar_second_2_1_1_2_2;
+      contentB3.innerHTML = C_bar_second_2_1_1_2_3;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-1-2-2
+    case C_bar_second_resp_2_1_1_2:
+      mainStory(C_bar_second_resp_2_1_1_2_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-2-2
+    case C_bar_second_resp_2_1:
+      mainStory(C_bar_second_resp_2_1_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-2
+    case C_bar_second_resp_2:
+      mainStory(C_bar_second_resp_2_2);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
@@ -1411,6 +1683,64 @@ function buttonChangeThree() {
     //Button Klick bei Back Second, Button 3
     case C_back_second:
       mainStory(C_back_second_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Bar Start, Button 3
+    case C_bar_start:
+      mainStory(C_bar_start_resp_3);  
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-1-2-3
+    case C_bar_second_resp_2_1_1_2:
+      mainStory(C_bar_second_resp_2_1_1_2_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-1-3
+    case C_bar_second_resp_2_1_1:
+      mainStory(C_bar_second_resp_2_1_1_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-1-3
+    case C_bar_second_resp_2_1:
+      mainStory(C_bar_second_resp_2_1_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B2-3
+    case C_bar_second_resp_2:
+      mainStory(C_bar_second_resp_2_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Bar Choice 2, B3
+    case C_bar_second:
+      mainStory(C_bar_second_resp_3);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
