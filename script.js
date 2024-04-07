@@ -1,4 +1,4 @@
-let playername = 'testthatshit';
+let playername = document.getElementsByName("name");
 
 let uhCounter = 0;
 
@@ -234,15 +234,56 @@ let C_bar_second = 'From the corner of your eye, you spot a good looking woman i
 
 let C_alley_start = 'After the humiliation in that bar, you roam the streets, still disappointed by your incompetence. After a short while, you hear two loud bangs from around the corner. You decide to investigate.<br><br>You arrive at a curious scene. There are two people, a man and a woman, lying on the ground surrounded by blood and a young boy crying beside them. He’s nudging and shaking the woman while crying “Mommy!!”. You wonder who that little boy is and why he’s harassing that woman.<br><br>You approach the young man.';
   let C_alley_start_1 = '(“Good evening there young lad. You’re pretty sharply dressed, looks real good on you. You have any plans for tonight?”)';
+    let C_alley_start_resp_1 = '“Help! My parents! M-mommy!”';
   let C_alley_start_2 = '(“Hi there little man, what’s your name?”)';
+    let C_alley_start_resp_2 = '“Bruce Wayne. Please! You gotta help my parents!!”';
   let C_alley_start_3 = '(“Uhhhhhhhhhh……uh……”)';
-  //HIER LETZTES MAL AUFGEHÖRT, MUSST NOCH ALLE DREI ANTWORTMÖGLICHKEITEN IN DIE JEWEILIGEN BUTTONCHANGES EINBAUEN
-  
-document.getElementById("story").innerHTML = C_alley_start;
+    let C_alley_start_resp_3 = '“Help!! My mommy and daddy!!”';
 
-document.getElementById("buttonOne").innerHTML = C_alley_start_1;
-document.getElementById("buttonTwo").innerHTML = C_alley_start_2;
-document.getElementById("buttonThree").innerHTML = C_alley_start_3;
+let C_alley_second = 'Using your detective-like deduction skills, you find out that these people must be the little boy’s parents.';
+  let C_alley_second_1 = '(“Making me meet your parents already? You must be pretty eager.”)';
+    let C_alley_second_resp_1 = '“Please, call an ambulance, they’ve been shot!!”';
+  let C_alley_second_2 = '(“Ah, you must be his parents. Nice to meet you, my name is' + playername + '”)';
+    let C_alley_second_resp_2 = '“What are you talking about?! You have to help!!”';
+  let C_alley_second_3 = '(“Uhhhhhhh……..uhmmmmmmmmmmmm”)';
+    let C_alley_second_resp_3 = '“Mommy!!!!!!”';
+
+let C_alley_third = 'It doesn’t seem to be going too well for you here, but maybe you still have a chance. Will you keep trying?';
+  let C_alley_third_1 = '(“Hey, sorry for being so straightforward but do you maybe want to go out some time?”)';
+    let C_alley_third_resp_1 = 'The little boy cries and wails “HELP!!!!!”. Ouch, seems like he’s not that interested in even giving you a chance. Disappointed, you leave the scene.';
+  let C_alley_third_2 = '(Give up)';
+    let C_alley_third_resp_2 = 'It doesn’t seem like he’s interested to go on a date with you in the slightest. Instead of stubbornly trying to seduce him, you realize that you have no chance and leave the scene.';
+  let C_alley_third_3 = '(“Uhhhhhhhhmmmm……..uhhhh……uh”)';
+    let C_alley_third_resp_3 = 'I’ll take that as a no.';
+
+let C_end = 'You’re at the end of the line. There are no more viable places to go. At least none you could think of right now. With your head hung low, you return home. Not Important is already waiting for you in your living room. He’s currently sitting on the sofa, eating chips.<br><br>He turns to you and says “So, how did it go today? Actually, don’t bother answering, I can tell from your aura that you had no luck.”<br><br>He puts the bag of chips on the table and says “I must say, I have never had a case like you. I always believed that everyone is capable of finding at least one person who would be interested in them, but you managed to prove me wrong. It seems there really is no hope for some people out there, including you.”<br><br>You can’t muster up the motivation to deny it, he’s right and you know it.<br><br>“It seems you’ll remain a loner for the rest of your life, I’m sorry but it appears that even I can’t fix you."';
+let C_end_start = 'So what will you do now?';
+  let C_end_start_1 = '(“There’s no point in living like this. I want to share my life with someone, to really matter to just one person. But if that goal is unobtainable, I don’t see the point in anything anymore…”)';
+    let C_end_start_resp_1 = '“Yeah, that’s what I thought. I’m not going to try to talk you out of this, it’s your choice. Hell, I’d do the same in your situation. I guess the only choice left to make is how you’ll do it.”';
+      let C_end_start_1_1 = '(Do it in the comfort of your own home)';
+        let C_end_start_resp_1_1 = 'After having one last glass of milk, you make your way up to your bedroom and put a belt around your neck. You figure you’re worth just as much as the clothes you wear, so you enter your wardrobe and attach the belt right beside your coats. After some more minutes of reflecting on your life, you plunge yourself into the cold abyss. It doesn’t take long, and hurts less than you imagined. Everything goes dark.';
+      let C_end_start_1_2 = '(Leave a last impression on the world)';
+        let C_end_start_resp_1_2 = 'You want to leave your mark on history. You grab your shotgun you use for home defense and leave your house. You conceal the gun and ride the bus to the local elementary school. You wait right in front of the entrance and remain there until school is over. As soon as the first bulk of children come out, you pull out your shotgun and shout “Hey kids! Check this out!” You bite into the muzzle and say “Get Traumatized bitches!” You pull the trigger and everything goes dark.';
+      let C_end_start_1_3 = '(“UHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH”)';
+        let C_end_start_resp_1_3 = 'There’s nothing else for you to say. You sit down in a corner and repeat this noise. Days pass…..eventually, Not Important leaves, realizing you will never return from this state. After weeks, your body finally gives in and you die of thirst.';
+  let C_end_start_2 = '(“I will legally marry my favorite anime character!!”)';
+    let C_end_start_resp_2 = '“Huh? What…..?”<br><br>You sprint to your computer and look up what it takes to buy the rights to a single character of a series and legally marry it. It costs a fortune.<br><br>You empty your bank account and hire a priest to marry your waifu “Yui-chan”. Not Important left ages ago, the moment he realized you were serious about that. You’re finally happy, even though you have no money left, lost your job because of your obsession with your “wife” and subsequently, now live in an alley.';
+  let C_end_start_3 = '(“Uhhhhhhhhhhhhhhhhh……..uhhhhhh”)';
+    let C_end_start_resp_3 = 'This is it. This is all you can do. This is what this adventure has led to. An indecisive, broken man who doesn’t even have to will to put a stop to this miserable existence. You go on living your life the way it has always been. No more adventures, nothing interesting in your life. You will work until you’re too old to be able to, then do nothing until your body gives in. You chose this.';
+
+let C_secret_start = 'Suddenly, a bright light shines through your ceiling and a person descends from the heavens.<br><br>Not Important gets startled and falls to the ground.<br><br>Before you stands a beautiful woman in some kind of white gown with blonde hair.<br>“Greetings ' + playername + ', I am Indecivia, goddess of Uhhhhhh. Through your sheer Will and unfaltering conviction, you have proven your dedication to me like no one has ever before.”<br><br>“I have decided to award you the highest honor I can and make you my consort, if you wish so.”<br><br>Not Important mutters “D-does that mean you’ll go on a date with him?”<br><br>“Yes, and much much more. We’ll be together for eternity.”<br><br>“Oh.”<br><br>“So ' + playername + ', do you accept my proposal?”';
+  let C_secret_start_1 = '“Uhhhhhhhhhhh”';
+  let C_secret_start_2 = '“UHHHHHMMMMM”';
+  let C_secret_start_3 = '“uh”';
+    let C_secret_start_resp = '“I’m glad to hear that. Come, let’s ascend to our happy ending……together.”';
+
+  let ende = 'Congratulations, you have finished the game.<br><br>Go back and try different options to maybe find another outcome.';
+  
+document.getElementById("story").innerHTML = startText;
+
+document.getElementById("buttonOne").innerHTML = C_start_first_1;
+document.getElementById("buttonTwo").innerHTML = C_start_first_2;
+document.getElementById("buttonThree").innerHTML = C_start_first_3;
 
 
 function mainStory(str){
@@ -268,7 +309,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Choice 2, Button 2
@@ -277,7 +318,7 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_start_third_1;
         contentB2.innerHTML = C_start_third_2;
         contentB3.innerHTML = C_start_third_3;
-        contentContinue.innerHTML = 'Filler';
+        contentContinue.innerHTML = '';
 
     //Continue für Choice 2, Button 3
     case C_start_second_resp_3:
@@ -285,7 +326,7 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_start_third_1;
         contentB2.innerHTML = C_start_third_2;
         contentB3.innerHTML = C_start_third_3;
-        contentContinue.innerHTML = 'Filler';
+        contentContinue.innerHTML = '';
         break;
 
     //Continue für Choice 2_1-1, Button 2
@@ -294,7 +335,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Choice 2_1-2, Button 2
@@ -303,7 +344,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
 
@@ -313,7 +354,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Choice 2_1-4, Button 2
@@ -322,7 +363,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
 
@@ -332,7 +373,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Choice 2_1-2, Button 3
@@ -341,7 +382,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Choice 2_1-3, Button 3
@@ -350,7 +391,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_third_1;
       contentB2.innerHTML = C_start_third_2;
       contentB3.innerHTML = C_start_third_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Starttext 1_3, Button 1
@@ -359,7 +400,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_fourth_1;
       contentB2.innerHTML = C_start_fourth_2;
       contentB3.innerHTML = C_start_fourth_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Starttext 1_3, Button 2
@@ -368,7 +409,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_fourth_1;
       contentB2.innerHTML = C_start_fourth_2;
       contentB3.innerHTML = C_start_fourth_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
     
     //Continue für Response Starttext 1_3, Button 3
@@ -377,71 +418,63 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_fourth_1;
       contentB2.innerHTML = C_start_fourth_2;
       contentB3.innerHTML = C_start_fourth_3;
-      contentContinue.innerHTML = 'Filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 4 Choice 1, Button 1
     case C_start_fourth_resp_1:
       mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-1-1
     case C_start_fourth_resp_2_1_1:
       mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-1-2
     case C_start_fourth_resp_2_1_2:
       mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-1-3
     case C_start_fourth_resp_2_1_3:
       mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-2
     case C_start_fourth_resp_2_2:
       mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 4 Choice 1, B2-3
     case C_start_fourth_resp_2_3:
       mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
+      contentB1.innerHTML = C_start_fifth_1;
+      contentB2.innerHTML = C_start_fifth_2;
+      contentB3.innerHTML = C_start_fifth_3;
+      contentContinue.innerHTML = '';
       break;
 
-    //Continue für Response Start Sekt. 4 Choice 1, Button 2
-    case C_start_fourth_resp_2:
-      mainStory(C_start_fifth_start);
-      contentB1.innerHTML = 'test1';
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
-      contentContinue.innerHTML = 'filler';
-      break;
 
     //Continue für Response Start Sekt. 4 Choice 1, Button 3
     case C_start_fourth_resp_3:
@@ -449,7 +482,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_start_fifth_1;
       contentB2.innerHTML = C_start_fifth_2;
       contentB3.innerHTML = C_start_fifth_3;
-      contentContinue.innerHTML = 'filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Continue für Response Start Sekt. 5 Choice 1, Button 1
@@ -476,7 +509,7 @@ function buttonChangeContinue(textContinue) {
       contentB1.innerHTML = C_basement_start_1;
       contentB2.innerHTML = C_basement_start_2;
       contentB3.innerHTML = C_basement_start_3;
-      contentContinue.innerHTML = 'filler';
+      contentContinue.innerHTML = '';
       break;
 
 
@@ -487,8 +520,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach oben für Befreien Option 1
@@ -498,8 +531,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach oben für Befreien Option 3
@@ -509,8 +542,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = 'test2';
-      contentB3.innerHTML = 'test3';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach oben Aufgeben 1
@@ -520,8 +553,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;  
 
     //Continue nach oben Aufgeben 2
@@ -531,8 +564,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach oben Aufgeben 3
@@ -542,8 +575,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach oben UHHHH
@@ -553,8 +586,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach Kick in Kopf
@@ -564,8 +597,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach klarstellen Date gemeint
@@ -575,8 +608,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;  
     
     //Continue nach Retardo Uhh bei Basement Choice 1, B1-1-3
@@ -586,8 +619,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach mere existence
@@ -597,8 +630,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue nach Retard noises Basement Choice 1, B1-3
@@ -608,8 +641,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue für Basement Choice 1, B1-2
@@ -619,8 +652,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue für Basement Choice 1, B1-3
@@ -630,8 +663,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;
 
     //Continue für Basement Choice 1, B3
@@ -641,8 +674,8 @@ function buttonChangeContinue(textContinue) {
         contentB1.innerHTML = C_back_start_free_1;
       } else {
         contentB1.innerHTML = C_back_start_1};
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB2.innerHTML = C_back_start_2;
+      contentB3.innerHTML = C_back_start_3;
       break;  
 
     //Continue für Back Start, B1
@@ -731,89 +764,233 @@ function buttonChangeContinue(textContinue) {
     //Continue für Bar Choice 2, Button 1
     case C_bar_second_resp_1:
       mainStory(C_alley_start);  
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-1-1
     case C_bar_second_resp_2_1_1_1:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-1-2-1
     case C_bar_second_resp_2_1_1_2_1:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-1-2-2
     case C_bar_second_resp_2_1_1_2_2:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-1-2-3
     case C_bar_second_resp_2_1_1_2_3:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-1-3
     case C_bar_second_resp_2_1_1_3:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-2
     case C_bar_second_resp_2_1_2:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-1-3
     case C_bar_second_resp_2_1_3:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-2
     case C_bar_second_resp_2_2:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B2-3
     case C_bar_second_resp_2_3:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
       break;
 
     //Continue für Bar Choice 2, B3
     case C_bar_second_resp_3:
       mainStory(C_alley_start);
-      contentB1.innerHTML = '';
-      contentB2.innerHTML = '';
-      contentB3.innerHTML = '';
+      contentB1.innerHTML = C_alley_start_1;
+      contentB2.innerHTML = C_alley_start_2;
+      contentB3.innerHTML = C_alley_start_3;
+      break;
+
+    //Continue für Alley Choice 1, B1
+    case C_alley_start_resp_1:
+      mainStory(C_alley_second);
+      contentB1.innerHTML = C_alley_second_1;
+      contentB2.innerHTML = C_alley_second_2;
+      contentB3.innerHTML = C_alley_second_3;
+      break;
+
+    //Continue für Alley Choice 1, B2
+    case C_alley_start_resp_2:
+      mainStory(C_alley_second);
+      contentB1.innerHTML = C_alley_second_1;
+      contentB2.innerHTML = C_alley_second_2;
+      contentB3.innerHTML = C_alley_second_3;
+      break;
+
+    //Continue für Alley Choice 1, B3
+    case C_alley_start_resp_3:
+      mainStory(C_alley_second);
+      contentB1.innerHTML = C_alley_second_1;
+      contentB2.innerHTML = C_alley_second_2;
+      contentB3.innerHTML = C_alley_second_3;
+      break;
+
+    //Continue für Alley Choice 2, B1
+    case C_alley_second_resp_1:
+      mainStory(C_alley_third);
+      contentB1.innerHTML = C_alley_third_1;
+      contentB2.innerHTML = C_alley_third_2;
+      contentB3.innerHTML = C_alley_third_3;
+      break;
+
+    //Continue für Alley Choice 2, B2
+    case C_alley_second_resp_2:
+      mainStory(C_alley_third);
+      contentB1.innerHTML = C_alley_third_1;
+      contentB2.innerHTML = C_alley_third_2;
+      contentB3.innerHTML = C_alley_third_3;
+      break;
+
+    //Continue für Alley Choice 2, B3
+    case C_alley_second_resp_3:
+      mainStory(C_alley_third);
+      contentB1.innerHTML = C_alley_third_1;
+      contentB2.innerHTML = C_alley_third_2;
+      contentB3.innerHTML = C_alley_third_3;
+      break;
+
+    //Continue für Alley Choice 3, B1
+    case C_alley_third_resp_1:
+      mainStory(C_end);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;  
+      break;
+
+    //Continue für Alley Choice 3, B2
+    case C_alley_third_resp_2:
+      mainStory(C_end);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;  
+      break;
+
+    //Continue für Alley Choice 3, B3
+    case C_alley_third_resp_3:
+      mainStory(C_end);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;  
+      break;
+
+    //Continue für End Start oder End Secret
+    case C_end:
+      if (uhCounter == 14) {
+        mainStory(C_secret_start);
+        contentB1.innerHTML = C_secret_start_1;
+        contentB2.innerHTML = C_secret_start_2;
+        contentB3.innerHTML = C_secret_start_3;
+        contentContinue.innerHTML = '';
+      } else {
+      mainStory(C_end_start);
+      contentB1.innerHTML = C_end_start_1;
+      contentB2.innerHTML = C_end_start_2;
+      contentB3.innerHTML = C_end_start_3};
+      break;
+    
+    //Continue für End Start Choice 1, B1-1
+    case C_end_start_resp_1_1:
+      mainStory(ende);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = '';
+      break;
+
+    //Continue für End Start Choice 1, B1-2
+    case C_end_start_resp_1_2:
+      mainStory(ende);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = '';
+      break;
+
+    //Continue für End Start Choice 1, B1-3
+    case C_end_start_resp_1_3:
+      mainStory(ende);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = '';
+      break;
+
+    //Continue für End Start Choice 1, B2
+    case C_end_start_resp_2:
+      mainStory(ende);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = '';
+      break;
+
+    //Continue für End Start Choice 1, B3
+    case C_end_start_resp_3:
+      mainStory(ende);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = '';
+      break;
+
+    //Continue für Secret End
+    case C_secret_start_resp:
+      mainStory(ende);
+      contentB1.innerHTML = '';    
+      contentB2.innerHTML = '';   
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = '';
       break;
   }
 }
@@ -939,7 +1116,7 @@ function buttonChangeOne() {
       contentB1.innerHTML = C_basement_second_1;
       contentB2.innerHTML = C_basement_second_2;
       contentB3.innerHTML = C_basement_second_3;
-      contentContinue.innerHTML = 'filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Button Klick bei Response: Basement Choice 2 Button 1
@@ -1104,13 +1281,66 @@ function buttonChangeOne() {
       contentContinue.innerHTML = conti;
       break;
 
-    //
+    //Button Klick bei Bar Choice 2, B2-1-1-2
     case C_bar_second_resp_2_1_1_2:
       mainStory(C_bar_second_resp_2_1_1_2_1);
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = ''; 
       contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Alley Choice 1, B1
+    case C_alley_start:
+      mainStory(C_alley_start_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Alley Choice 2, B1
+    case C_alley_second:
+      mainStory(C_alley_second_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Alley Choice 3, B1
+    case C_alley_third:
+      mainStory(C_alley_third_resp_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei End Choice 1, B1
+    case C_end_start:
+      mainStory(C_end_start_resp_1);
+      contentB1.innerHTML = C_end_start_1_1;
+      contentB2.innerHTML = C_end_start_1_2;
+      contentB3.innerHTML = C_end_start_1_3;
+      break;
+
+    //Button Klick bei End Choice 1, B1-1
+    case C_end_start_resp_1:
+      mainStory(C_end_start_resp_1_1);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = 'End';
+      break;
+
+    //Button Klick bei Secret End, B1
+    case C_secret_start:
+      mainStory(C_secret_start_resp);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = 'End';
       break;
     }
   }
@@ -1203,7 +1433,7 @@ function buttonChangeTwo() {
       contentB1.innerHTML = C_start_fourth_2_1;
       contentB2.innerHTML = C_start_fourth_2_2;
       contentB3.innerHTML = C_start_fourth_2_3;
-      contentContinue.innerHTML = conti;
+      contentContinue.innerHTML = '';
       break;
 
     //Button Klick bei Response: Start Sekt. 4 Choice 1, B2, Button 2
@@ -1239,7 +1469,7 @@ function buttonChangeTwo() {
       contentB1.innerHTML = C_basement_start_2_1;
       contentB2.innerHTML = C_basement_start_2_2;
       contentB3.innerHTML = C_basement_start_2_3;
-      contentContinue.innerHTML = 'filler';
+      contentContinue.innerHTML = '';
       break;
 
     //Button Klick bei Response: Basement Start, B2, Button 2
@@ -1411,6 +1641,60 @@ function buttonChangeTwo() {
       contentB3.innerHTML = '';
       contentContinue.innerHTML = conti;
       break;
+
+    //Button Klick bei Alley Choice 1, B2
+    case C_alley_start:
+      mainStory(C_alley_start_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Alley Choice 2, B2
+    case C_alley_second:
+      mainStory(C_alley_second_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei Alley Choice 3, B2
+    case C_alley_third:
+      mainStory(C_alley_third_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      break;
+
+    //Button Klick bei End Choice 1, B1-2
+    case C_end_start_resp_1:
+      mainStory(C_end_start_resp_1_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = 'End';
+      break;
+
+    //Button Klick bei End Choice 1, B2
+    case C_end_start:
+      mainStory(C_end_start_resp_2);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = 'End';
+      break;
+
+    //Button Klick bei Secret End, B2
+    case C_secret_start:
+      mainStory(C_secret_start_resp);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = 'End';
+      break;
       }
     }
 
@@ -1525,7 +1809,7 @@ function buttonChangeThree() {
       contentB1.innerHTML = '';
       contentB2.innerHTML = '';
       contentB3.innerHTML = '';
-      contentContinue.innerHTML = conti;
+      contentContinue.innerHTML = '';
       break;
 
     //Button Klick bei Response: Start Sekt. 4 Choice 1, B2-1, Button 3
@@ -1554,7 +1838,7 @@ function buttonChangeThree() {
       contentB1.innerHTML = C_basement_second_1;
       contentB2.innerHTML = C_basement_second_2;
       contentB3.innerHTML = C_basement_second_3;
-      contentContinue.innerHTML = 'filler';
+      contentContinue.innerHTML = '';
       uhCounter++;
       console.log(uhCounter);
       break;
@@ -1747,6 +2031,66 @@ function buttonChangeThree() {
       contentContinue.innerHTML = conti;
       uhCounter++;
       console.log(uhCounter);
+      break;
+
+    //Button Klick bei Alley Choice 1, B3
+    case C_alley_start:
+      mainStory(C_alley_start_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Alley Choice 2, B3
+    case C_alley_second:
+      mainStory(C_alley_second_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei Alley Choice 3, B1
+    case C_alley_third:
+      mainStory(C_alley_third_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = conti;
+      uhCounter++;
+      console.log(uhCounter);
+      break;
+
+    //Button Klick bei End Choice 1, B1-3
+    case C_end_start_resp_1:
+      mainStory(C_end_start_resp_1_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = 'End';
+      break;
+
+    //Button Klick bei End Choice 1, B3
+    case C_end_start:
+      mainStory(C_end_start_resp_3);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = ''; 
+      contentContinue.innerHTML = 'End';
+      break;
+    
+    //Button Klick bei Secret End, B3
+    case C_secret_start:
+      mainStory(C_secret_start_resp);
+      contentB1.innerHTML = '';
+      contentB2.innerHTML = '';
+      contentB3.innerHTML = '';
+      contentContinue.innerHTML = 'End';
       break;
   }
     }
