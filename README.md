@@ -1,2 +1,2 @@
-# school-project
-school project:  create a similar visual novel game, text based and with a lot of dark humor. It is possible to add pictures later. 
+# Big Like, Great Disappointment
+Creating a Romance Visual Novel including dark humor, bad visuals and horrible code
