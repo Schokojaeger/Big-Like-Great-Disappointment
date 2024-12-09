@@ -1,0 +1,99 @@
+{
+    "start": 
+        {
+            "text": "It’s another lonely night, like always. You sleep in your comfy bed, thinking of nothing. You never had any luck with women until now, you either don’t try anything at all or you fuck up so bad that you feel like you have to vanish from their lives like you never existed at all.<br><br>On this night, you are woken up by a raspy voice somewhere in front of you.<br><br>„Wakey wakey, you lonely sack of piss. Time to actually do something for once in your life.”<br><br>You open your eyes and are greeted by a bald, skinny man standing right in front of your bed. The window in your room is shattered and wet footsteps on the ground are leading right to him.",
+            "choices" :
+                {
+                    "1-1": ["(“OH GOD! WHO ARE YOU?! WHAT ARE YOU DOING IN MY HOUSE?!!”)", false, ["start.responses.1-1R"]],
+                    "1-2": ["(*pull out your self-defense ICBM from the drawer*)", false, ["start.responses.1-2R"]],
+                    "1-3": ["(“uhmm…..uh……I……uhm………aaargg….uhh“)", true, ["start.responses.1-3R"]],
+                    "1-1-1": ["(“A date?? I don’t wanna go on a date.”)", false, ["start.responses.1-1-1R"]],
+                    "1-1-2": ["(“Get out of my house right now!”)", false, ["start.responses.1-1-2R"]],
+                    "1-1-3": ["(“Uhmmm…..uhhhhh……uhhh”)", false, ["start.responses.1-1-3R"]],
+                    "1-1-1-1": ["(“No I don’t!”)", false, ["start.responses.1-1-1-1R"]],
+                    "1-1-1-2": ["(“Okay you’re right, I do.”)", false, ["start.responses.1-1-1-2R"]],
+                    "1-1-1-3": ["(“Uhh….uh…..uhmmmmmm……”)", true, ["start.responses.1-1-1-3R"]],
+                    "1-1-1-1-1": ["(“NO! I! DON’T!”)", false, ["start.responses.1-1-1-1-1R"]],
+                    "1-1-1-1-2": ["(“Okay, I do”)", false, ["start.responses.1-1-1-1-2R"]],
+                    "1-1-1-1-3": ["(“uhm…..uhhh…..uh”)", true, ["start.responses.1-1-1-1-3R"]],
+                    "1-1-1-1-1-1": ["(“No……I…….don’t”)", false, ["start.responses.1-1-1-1-1-1R"]],
+                    "1-1-1-1-1-2": ["(“Okay…….fine……geez”)", false, ["start.responses.1-1-1-1-1-2R"]],
+                    "1-1-1-1-1-3": ["(“uhhh…….uhm….uh……”)", true, ["start.responses.1-1-1-1-1-3R"]],
+                    "1-1-1-1-1-1-1": ["(“Ugghhhhhhhh Fine”)", false, ["start.responses.1-1-1-1-1-1-1R"]],
+                    "1-1-1-1-1-1-2": ["(“For the last time, n-“)", false, ["start.responses.1-1-1-1-1-1-2R"]],
+                    "1-1-1-1-1-1-3": ["(“Umm……uhhh….uh….arghh…..uhmmm”)", true, ["start.responses.1-1-1-1-1-1-3R"]],
+                    "2-1": ["(“Okay?”)", false, ["start.responses.2-1R"]],
+                    "2-2": ["(“OH GOD NO! I’d rather die!!”)", false, ["start.responses.2-2R"]],
+                    "2-3": ["(“UHHHHHHHHHHHHHHHHHHHHHHHHH”)", true, ["start.responses.2-3R"]],
+                    "3-1": ["(“But isn’t that just being manipulative and deceitful?”)", false, ["start.responses.3-1R"]],
+                    "3-2": ["(“How about you and I try that right here and now?”)", false, ["start.responses.3-2R"]],
+                    "3-3": ["(“Uh…..uh…..uhhhh….”)", true, ["start.responses.3-3R"]],
+                    "3-2-1": ["(“I’m a woman, though”)", false, ["start.responses.3-2-1R"]],
+                    "3-2-2": ["(“Okay, sorry”)", false, ["start.responses.3-2-2R"]],
+                    "3-2-3": ["(“Uhhh….uhm….uh”)", false, ["start.responses.3-2-3R"]],
+                    "3-2-1-1": ["(“But I am.”)", false, ["start.responses.3-2-1-1R"]],
+                    "3-2-1-2": ["(“Okay, sorry”)", false, ["start.responses.3-2-1-2R"]],
+                    "3-2-1-3": ["(“Uhhhmmmmm……uhh…….arghhhh…..”)", true, ["start.responses.3-2-1-3R"]],
+                    "4-1": ["(“Why only three?”)", false, ["start.responses.4-1R"]],
+                    "4-2": ["(“Sounds doable.”)", false, ["start.responses.4-2R"]],
+                    "4-3": ["(“Uhhhh…….uhhh……..uhmmmmmm”)", true, ["start.responses.4-3R"]]
+                },
+            "responses":
+                {
+                    "1-1R": ["“My name is Not Important, I’m here to show you how to get a date”", false, [true, "start.choices.1-1-1", "start.choices.1-1-2", "start.choices.1-1-3"]],
+                    "1-2R": ["He slightly grazes your ICBM with his hand and it flies away from your flimsy grip<br><br>“There’s no time for making use of your 2nd amendment rights. We gotta get you a date.”", false, [true, "start.choices.1-1-1", "start.choices.1-1-2", "start.choices.1-1-3"]],
+                    "1-3R": ["„You gotta get over that introvert gibberish if you want to get a date!”", false, [true, "start.choices.1-1-1", "start.choices.1-1-2", "start.choices.1-1-3"]],
+                    "1-1-1R": ["He gives you a light smack on your cheek<br><br>“Yes you do!”", false, [true, "start.choices.1-1-1-1", "start.choices.1-1-1-2", "start.choices.1-1-1-3"]],
+                    "1-1-2R": ["“No, this is crucial! Listen carefully.”", "c", ["start.responses.2S"]],
+                    "1-1-3R": ["“We’ll get that shyness out of you yet. Now listen.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1R": ["He slaps you again<br><br>“YES YOU DO!”", false, [true, "start.choices.1-1-1-1-1", "start.choices.1-1-1-1-2", "start.choices.1-1-1-1-3"]],
+                    "1-1-1-2R": ["“Why don’t you try to be honest from the get-go next time? Anyway.”", "c", ["start.responses.2S"]],
+                    "1-1-1-3R": ["“What’s with you? Are you okay there? Anyway, listen.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-1R": ["He slaps you for a third time<br><br>“YES YOU FUCKING DO!”<br><br>You fly against the wall, blood splatters all over it. You feel lightheaded.", false, [true, "start.choices.1-1-1-1-1-1", "start.choices.1-1-1-1-1-2", "start.choices.1-1-1-1-1-3"]],
+                    "1-1-1-1-2R": ["“Good, now let me explain.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-3R": ["“Was I a bit too forceful there? Whatever, listen carefully.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-1-1R": ["“You stubborn little piece of shit! Why did you open this game then?!<br>Or did you just want to see what happens if you keep saying “No”?<br>You will listen to me and do as I say, Capice?”", false, [true, "start.choices.1-1-1-1-1-1-1", "start.choices.1-1-1-1-1-1-2", "start.choices.1-1-1-1-1-1-3"]],
+                    "1-1-1-1-1-2R": ["“Did that knock some sense into you? Now listen good.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-1-3R": ["„Did I give you a lobotomy or something? What’s wrong with<br>You? Anyway, let me explain.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-1-1-1R": ["“Finally, now let me explain.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-1-1-2R": ["“Shut up and listen.”", "c", ["start.responses.2S"]],
+                    "1-1-1-1-1-1-3R": ["„Did I give you a lobotomy or something? What’s wrong with<br>You? Anyway, let me explain.”", "c", ["start.responses.2S"]],
+                    "2S": ["“If you want to find yourself someone who is willing to go out with someone like you, you have to do something you’ve never done before in your life.”<br><br>“Talk with them”", false, [true, "start.choices.2-1", "start.choices.2-2", "start.choices.2-3"]],
+                    "2-1R": ["“It’s not as easy as you think. There are very complicated and intricate aspects to talking with people.”", "c", ["start.responses.3S"]],
+                    "2-2R": ["“I know I’m asking a lot from you, but this is the only way to get your life back on track.”", "c", ["start.responses.3S"]],
+                    "2-3R": ["“Not a bad attempt, but you have to actually use words instead of one continuous sound.”", "c", ["start.responses.3S"]],
+                    "3S": ["“You have to find out what every individual person is interested in and take full advantage of it to get them to do what you want”", false, [true, "start.choices.3-1", "start.choices.3-2", "start.choices.3-3"]],
+                    "3-1R": ["“Yes, that’s what I just said, didn’t you listen?”", "c", ["start.responses.4S"]],
+                    "3-2R": ["“Sorry, I’m not gay.”", false, [true, "start.choices.3-2-1", "start.choices.3-2-2", "start.choices.3-2-3"]],
+                    "3-3R": ["“Too much input for you? That’s okay, you’ll get the hang of it.”", "c", ["start.responses.4S"]],
+                    "3-2-1R": ["“No you’re not.”", false, [true, "start.choices.3-2-1-1", "start.choices.3-2-1-2", "start.choices.3-2-1-3"]],
+                    "3-2-2R": ["“You better be.”", "c", ["start.responses.4S"]],
+                    "3-2-3R": ["“I know, being rejected hurts like hell huh? And that’s exactly why you gotta man up.”", "c", ["start.responses.4S"]],
+                    "3-2-1-1R": ["“Not in this game, you’re not.”", "c", ["start.responses.4S"]],
+                    "3-2-1-2R": ["“Whatever dude.”", "c", ["start.responses.4S"]],
+                    "3-2-1-3R": ["“What in the world is wrong with you?”", "c", ["start.responses.4S"]],
+                    "4S": ["“There are usually three things you can reply with, for anything another person says. You just have to find out which is the right one.”", false, [true, "start.choices.4-1", "start.choices.4-2", "start.choices.4-3"]],
+                    "4-1R": ["“All good things come in threes, dummy”", "c", ["start.responses.5S"]],
+                    "4-2R": ["“That’s what I like to hear.”", "c", ["start.responses.5S"]],
+                    "4-3R": ["“That’s definitely not the right option.”", "c", ["start.responses.5S"]],
+                    "5S": ["“Now I know that I might be asking a lot from a Smoothbrain like you, so I got you a training partner who was more than happy to escort me today. I had them wait in the basement to not overwhelm you right off the bat. Go down and talk to them.”", "c", ["end", "base.text", "base.choices.1", "base.choices.2", "base.choices.3"]]
+                }
+        },
+
+    "base":
+        {
+            "text": "You arrive in your basement. It’s dark and smells like old cement mixed with mold. You turn on the light and see a slim woman crouching by the wall. She’s attached to the wall by a chain that’s wrapped around her left arm.<br><br>She has long, dirty and fuzzy, blonde hair and is wearing an equally dirty dress. She seems to wear some makeup as well, though it’s ruined from all the tears running down her face. She’s just sitting there, wailing and crying.<br><br>“HEEEEEELP!!!!” She screams out, obviously in despair.<br><br>You approach her and she flinches, getting even closer to the wall like she’s trying to run away through it. “No! Please! Get away from me!”",
+            "choices": 
+                {
+                    "1-1": ["(“Well hi there beautiful”)", false, ["base.responses.1-1R"]],
+                    "1-2": ["(“What the fuck is going on down here?”)", false, ["base.responses.1-2R"]],
+                    "1-3": ["(“Uhhhhhhhh………uhhhhhhhhh………..ughghhhhhh….”)", true, ["base.responses.1-3R"]],
+                },
+            "responses":
+                {
+                    "1-1R": ["“NOO! PLEASE I DON’T WANNA, JUST LET ME GO!”", false, [true, "base.choices.2-1", "base.choices.2-2", "base.choices.2-3"]],
+                    "1-2R": ["“Some man came up behind me, put a bag over my head and dragged me into his car. He mumbled something about dates and multiple choice, that I’ll be “The perfect training dummy”. I don’t know why I’m here, what have I done to deserve this? Please just let me go!”", false, [true, "base.choices.1-2-1", "base.choices.1-2-2", "base.choices.1-2-3"]],
+                    "1-3R": ["“NO! PLEASE GOD!! STAY AWAY FROM ME!!!”", true, [true, "base.choices.2-1", "base.choices.2-2", "base.choices.2-3"]],
+                }
+        }
+}

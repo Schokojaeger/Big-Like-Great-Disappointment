@@ -1,0 +1,25 @@
+wird dann accessed mit javascript mit "variablenname = JSON.parse()"
+danach kann man auf alles im json drin mit normalen accessern gehen
+
+z.B.    script = JSON.parse(dialogue.json);
+        starttext = script.start.text
+
+aus diesem Grund stehen bei den choices und responses hinten jeweils auch der gesamte link.
+denn dann kann man sich das einfach mit dem Key rausholen und in Buttons und Textbox einfügen lassen.
+
+Erklärung choices und responses:
+
+alles wird jeweils in einem array gespeichert. Der erste Eintrag ist immer der eigentliche Text der eingefügt werden soll.
+Ob dieser nun in einem Button steht oder in dem Textfeld selbst, wird später festgelegt.
+
+als nächstes wird entweder false oder true oder "c" gegeben, das ist für den Uh-Counter gut.
+Wenn es true ist, ist es ein "uh", wenn nicht, dann nicht.
+Wenn es "c" ist, wird als nächstes ein Continue Button kommen
+
+Danach folgt ein weiteres Array.
+Falls der erste Eintrag true ist, heißt das, dass die darauf folgenden einträge im Array beschriftungen für Buttons sind,
+ansonsten ist es für die Textbox
+
+Falls man am Ende einer location angekommen ist (siehe Ende von Start), ist im letztem Array der erste Eintrag "end", was bedeutet, dass die darauf folgenden
+Einträge einmal der Starttext von der nächsten Location ist und danach die 3 Buttons dafür kommen.
+Falls bei der nächsten Location nicht sofort Buttons gebraucht werden sollten, kann man das "end" weglassen und ganz normal wie mit einem continue weitermachen. 
