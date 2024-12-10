@@ -23,3 +23,5 @@ ansonsten ist es für die Textbox
 Falls man am Ende einer location angekommen ist (siehe Ende von Start), ist im letztem Array der erste Eintrag "end", was bedeutet, dass die darauf folgenden
 Einträge einmal der Starttext von der nächsten Location ist und danach die 3 Buttons dafür kommen.
 Falls bei der nächsten Location nicht sofort Buttons gebraucht werden sollten, kann man das "end" weglassen und ganz normal wie mit einem continue weitermachen. 
+
+TODO schau wie tf man innerhalb vom JSON der player namen dynamisch einfügen lassen kann. (Wahrscheinlich über die .js aber was muss da in der JSON drinstehen). Mach eine strg + f Suche nach playername, da muss es überall ersetzt werden.
