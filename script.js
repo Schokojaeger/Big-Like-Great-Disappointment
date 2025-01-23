@@ -1,3 +1,8 @@
+/* there is currently no input field for a player name, therefore it can't be
+   changed dynamically */
+let playername = document.getElementsByName("name");
+playername = "TESTNAME"
+
 const dialogue = ({
   "start": 
       {
@@ -9,19 +14,19 @@ const dialogue = ({
                   "1-3": ["(“uhmm…..uh……I……uhm………aaargg….uhh“)", true, ["dialogue.start.responses['1-3R']"]],
                   "1-1-1": ["(“A date?? I don’t wanna go on a date.”)", false, ["dialogue.start.responses['1-1-1R']"]],
                   "1-1-2": ["(“Get out of my house right now!”)", false, ["dialogue.start.responses['1-1-2R']"]],
-                  "1-1-3": ["(“Uhmmm…..uhhhhh……uhhh”)", false, ["dialogue.start.responses['1-1-3R']"]],
+                  "1-1-3": ["(“Uhmmm…..uhhhhh……uhhh”)", true, ["dialogue.start.responses['1-1-3R']"]],
                   "1-1-1-1": ["(“No I don’t!”)", false, ["dialogue.start.responses['1-1-1-1R']"]],
                   "1-1-1-2": ["(“Okay you’re right, I do.”)", false, ["dialogue.start.responses['1-1-1-2R']"]],
-                  "1-1-1-3": ["(“Uhh….uh…..uhmmmmmm……”)", true, ["dialogue.start.responses['1-1-1-3R']"]],
+                  "1-1-1-3": ["(“Uhh….uh…..uhmmmmmm……”)", false, ["dialogue.start.responses['1-1-1-3R']"]],
                   "1-1-1-1-1": ["(“NO! I! DON’T!”)", false, ["dialogue.start.responses['1-1-1-1-1R']"]],
                   "1-1-1-1-2": ["(“Okay, I do”)", false, ["dialogue.start.responses['1-1-1-1-2R']"]],
-                  "1-1-1-1-3": ["(“uhm…..uhhh…..uh”)", true, ["dialogue.start.responses['1-1-1-1-3R']"]],
+                  "1-1-1-1-3": ["(“uhm…..uhhh…..uh”)", false, ["dialogue.start.responses['1-1-1-1-3R']"]],
                   "1-1-1-1-1-1": ["(“No……I…….don’t”)", false, ["dialogue.start.responses['1-1-1-1-1-1R']"]],
                   "1-1-1-1-1-2": ["(“Okay…….fine……geez”)", false, ["dialogue.start.responses['1-1-1-1-1-2R']"]],
-                  "1-1-1-1-1-3": ["(“uhhh…….uhm….uh……”)", true, ["dialogue.start.responses['1-1-1-1-1-3R']"]],
+                  "1-1-1-1-1-3": ["(“uhhh…….uhm….uh……”)", false, ["dialogue.start.responses['1-1-1-1-1-3R']"]],
                   "1-1-1-1-1-1-1": ["(“Ugghhhhhhhh Fine”)", false, ["dialogue.start.responses['1-1-1-1-1-1-1R']"]],
                   "1-1-1-1-1-1-2": ["(“For the last time, n-“)", false, ["dialogue.start.responses['1-1-1-1-1-1-2R']"]],
-                  "1-1-1-1-1-1-3": ["(“Umm……uhhh….uh….arghh…..uhmmm”)", true, ["dialogue.start.responses['1-1-1-1-1-1-3R']"]],
+                  "1-1-1-1-1-1-3": ["(“Umm……uhhh….uh….arghh…..uhmmm”)", false, ["dialogue.start.responses['1-1-1-1-1-1-3R']"]],
                   "2-1": ["(“Okay?”)", false, ["dialogue.start.responses['2-1R']"]],
                   "2-2": ["(“OH GOD NO! I’d rather die!!”)", false, ["dialogue.start.responses['2-2R']"]],
                   "2-3": ["(“UHHHHHHHHHHHHHHHHHHHHHHHHH”)", true, ["dialogue.start.responses['2-3R']"]],
@@ -33,7 +38,7 @@ const dialogue = ({
                   "3-2-3": ["(“Uhhh….uhm….uh”)", false, ["dialogue.start.responses['3-2-3R']"]],
                   "3-2-1-1": ["(“But I am.”)", false, ["dialogue.start.responses['3-2-1-1R']"]],
                   "3-2-1-2": ["(“Okay, sorry”)", false, ["dialogue.start.responses['3-2-1-2R']"]],
-                  "3-2-1-3": ["(“Uhhhmmmmm……uhh…….arghhhh…..”)", true, ["dialogue.start.responses['3-2-1-3R']"]],
+                  "3-2-1-3": ["(“Uhhhmmmmm……uhh…….arghhhh…..”)", false, ["dialogue.start.responses['3-2-1-3R']"]],
                   "4-1": ["(“Why only three?”)", false, ["dialogue.start.responses['4-1R']"]],
                   "4-2": ["(“Sounds doable.”)", false, ["dialogue.start.responses['4-2R']"]],
                   "4-3": ["(“Uhhhh…….uhhh……..uhmmmmmm”)", true, ["dialogue.start.responses['4-3R']"]]
@@ -90,27 +95,27 @@ const dialogue = ({
                   "1-2-1": ["(“I don’t really know what that guy wants from me either. Look, I’ll just help you out of those shackles. This is insane.”)", false, ["dialogue.base.responses['1-2-1R']"]],
                   "1-2-1-1": ["(Free her “No problem. Hey, you mind if we go out at some point?”)", false, ["dialogue.base.responses['1-2-1-1R']"]],
                   "1-2-1-2": ["(“On second thought, I still need you for something.”)", false, ["dialogue.base.responses['1-2-1-2R']"]],
-                  "1-2-1-3": ["(Free her “Uh…..uhhhhhh…….uughhhhhh”)", true, ["dialogue.base.responses['1-2-1-3R']"]],
+                  "1-2-1-3": ["(Free her “Uh…..uhhhhhh…….uughhhhhh”)", false, ["dialogue.base.responses['1-2-1-3R']"]],
                   "1-2-2": ["(“Oh I see, I guess that makes sense. It’s really nice of you to go along with all of this. I suppose there really are still some good people out there.“)", false, ["dialogue.base.responses['1-2-2R']"]],
-                  "1-2-3": ["(“Uhhhhhh……...uhhhhhhhhhhh……...uhhhhh“)", true, ["dialogue.base.responses['1-2-3R']"]],
+                  "1-2-3": ["(“Uhhhhhh……...uhhhhhhhhhhh……...uhhhhh“)", false, ["dialogue.base.responses['1-2-3R']"]],
                   "1-3": ["(“Uhhhhhhhh………uhhhhhhhhh………..ughghhhhhh….”)", true, ["dialogue.base.responses['1-3R']"]],
                   "2-1": ["(“So, uhh. What are your hobbies?”", false, ["dialogue.base.responses['2-1R']"]],
                   "2-1-1": ["(“Me? I like to stay home mostly. Sometimes, I like to go out and buy groceries. It’s not that common of a hobby, I know, but it's something I enjoy.”)", false, ["dialogue.base.responses['2-1-1R']"]],
                   "2-1-2": ["(“Look, this is hard for me as well. I don’t really have any social interaction in my daily life, but I’m doing my best. So just bear with me.”)", false, ["dialogue.base.responses['2-1-2R']"]],
                   "2-1-2-1": ["(“I’m just trying to get you to go on a date with me”)", false, ["dialogue.base.responses['2-1-2-1R']"]],
                   "2-1-2-2": ["(“I’m sorry, this is stupid. Let’s just forget about it.”)", false, ["dialogue.base.responses['2-1-2-2R']"]],
-                  "2-1-2-3": ["(“uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh”)", true, ["dialogue.base.responses['2-1-2-3R']"]],
-                  "2-1-3": ["(“Uhhhhhh…….uhhhhhhhhh………ugh”)", true, ["dialogue.base.responses['2-1-3R']"]],
+                  "2-1-2-3": ["(“uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh”)", false, ["dialogue.base.responses['2-1-2-3R']"]],
+                  "2-1-3": ["(“Uhhhhhh…….uhhhhhhhhh………ugh”)", false, ["dialogue.base.responses['2-1-3R']"]],
                   "2-2": ["(“I need you to go on a date with me.”)", false, ["dialogue.base.responses['2-2R']"]],
                   "2-2-1": ["(“Unfortunately for you, I do.”)", false, ["dialogue.base.responses['2-2-1R']"]],
                   "2-2-1-1": ["(“I hate it just as much as you do, but I have no other choice.”)", false, ["dialogue.base.responses['2-2-1-1R']"]],
                   "2-2-1-1-1": ["(Kick her in the head)", false, ["dialogue.base.responses['2-2-1-1-1R']"]],
                   "2-2-1-1-2": ["(“Kill you? I just want to go on a date with you”)", false, ["dialogue.base.responses['2-2-1-1-2R']"]],
-                  "2-2-1-1-3": ["(“Uhhhhhhhh……..uhmmm……huuuuuuuuuu”)", true, ["dialogue.base.responses['2-2-1-1-3R']"]],
+                  "2-2-1-1-3": ["(“Uhhhhhhhh……..uhmmm……huuuuuuuuuu”)", false, ["dialogue.base.responses['2-2-1-1-3R']"]],
                   "2-2-1-2": ["(“Your mere existence is an insult to god.”)", false, ["dialogue.base.responses['2-2-1-2R']"]],
-                  "2-2-1-3": ["(“uhhhhhhhhhhhh…….uhhhh………uhhhhhhh”)", true, ["dialogue.base.responses['2-2-1-3R']"]],
+                  "2-2-1-3": ["(“uhhhhhhhhhhhh…….uhhhh………uhhhhhhh”)", false, ["dialogue.base.responses['2-2-1-3R']"]],
                   "2-2-2": ["(*approach her* “You want to go? You can! With me! On a Date!”)", false, ["dialogue.base.responses['2-2-2R']"]],
-                  "2-2-3": ["(“ughhhhhhh……….uhhhhhhhhhh”)", true, ["dialogue.base.responses['2-2-3R']"]],
+                  "2-2-3": ["(“ughhhhhhh……….uhhhhhhhhhh”)", false, ["dialogue.base.responses['2-2-3R']"]],
                   "2-3": ["(“ughhhhhhh……….uhhhhhhhhhh”)", true, ["dialogue.base.responses['2-3R']"]]
               },
           "responses":
@@ -118,7 +123,7 @@ const dialogue = ({
                   "1-1R": ["“NOO! PLEASE I DON’T WANNA, JUST LET ME GO!”", false, [true, "dialogue.base.choices['2-1']", "dialogue.base.choices['2-2']", "dialogue.base.choices['2-3']"]],
                   "1-2R": ["“Some man came up behind me, put a bag over my head and dragged me into his car. He mumbled something about dates and multiple choice, that I’ll be “The perfect training dummy”. I don’t know why I’m here, what have I done to deserve this? Please just let me go!”", false, [true, "dialogue.base.choices['1-2-1']", "dialogue.base.choices['1-2-2']", "dialogue.base.choices['1-2-3']"]],
                   "1-2-1R": ["“Oh god, thank you. I want to go home.”", false, [true, "dialogue.base.choices['1-2-1-1']", "dialogue.base.choices['1-2-1-2']", "dialogue.base.choices['1-2-1-3']"]],
-                  "1-2-1-1R": ["“You’ve got to be kidding me.”<br><br>She runs away.", "c", ["end", "up.text", "dialogue.up.choices['1-1free']", "dialogue.up.choices['1-2']", "dialogue.up.choices['1-3']"]],
+                  "1-2-1-1R": ["“You’ve got to be kidding me.”<br><br>She runs away.", "c", ["end", "dialogue.up.text", "dialogue.up.choices['1-1free']", "dialogue.up.choices['1-2']", "dialogue.up.choices['1-3']"]],
                   "1-2-1-2R": ["“No, please. I’m scared.”", false, [true, "dialogue.base.choices['2-1']", "dialogue.base.choices['2-2']", "dialogue.base.choices['2-3']"]],
                   "1-2-1-3R": ["“Stop! You’re scaring me!”<br>She pushes you away and runs upstairs.", "c", ["end", "dialogue.up.text", "dialogue.up.choices['1-1free']", "dialogue.up.choices['1-2']", "dialogue.up.choices['1-3']"]],
                   "1-2-2R": ["“What?!! No!! I don’t want to be here! Please let me out!!“", false, [true, "dialogue.base.choices['2-1']", "dialogue.base.choices['2-2']", "dialogue.base.choices['2-3']"]],
@@ -180,19 +185,19 @@ const dialogue = ({
                   "1-2": ["(“Whisky, mixed with vodka and gin. Blue Energy-Drink, soda-pop, a teaspoon of brown sugar, spice, everything nice, sprinkles and a cherry on top”)", false, ["dialogue.bar.responses['1-2R']"]],
                   "1-3": ["(“UHHHHHH……..UHMM……UHH”)", true, ["dialogue.bar.responses['1-3R']"]],
                   "2-1": ["(Use a cheesy pickup line)", false, ["dialogue.bar.responses['2-1R']"]],
-                  "2-2": ["(“Hi, my name is ' + playername + '. How are you tonight”)", false, ["dialogue.bar.responses['2-2R']"]],
+                  "2-2": ["(“Hi, my name is " + playername + ". How are you tonight”)", false, ["dialogue.bar.responses['2-2R']"]],
                   "2-2-1": ["(„Ain’t that nice. Do you mind if we talk for a bit?“)", false, ["dialogue.bar.responses['2-2-1R']"]],
                   "2-2-1-1": ["(“So, what’s your name?”)", false, ["dialogue.bar.responses['2-2-1-1R']"]],
                   "2-2-1-1-1": ["(“Chloe? Your parents must’ve not been that creative huh?”)", false, ["dialogue.bar.responses['2-2-1-1-1R']"]],
                   "2-2-1-1-2": ["(“Nice to meet you Chloe. Sooooo, why are you here alone on such a beautiful friday night?”)", false, ["dialogue.bar.responses['2-2-1-1-2R']"]],
                   "2-2-1-1-2-1": ["(“Drinking alone in a bar is fun for you? That’s just pathetic if you ask me.”)", false, ["dialogue.bar.responses['2-2-1-1-2-1R']"]],
                   "2-2-1-1-2-2": ["(“I know what you mean. The pizza boxes and clothes just pile up and it starts to smell moldy when you don’t open your windows for a while. Your PC heats up and makes the air all dry and stuff.”)", false, ["dialogue.bar.responses['2-2-1-1-2-2R']"]],
-                  "2-2-1-1-2-3": ["(“Uhhhhhhhhh......uh......uh.....uh....uhhh“)", true, ["dialogue.bar.responses['2-2-1-3R']"]],
-                  "2-2-1-1-3": ["(“Uhhhhhhm………uhhh……..mmmmmmmmhhh”)", true, ["dialogue.bar.responses['2-2-1-3R']"]],
+                  "2-2-1-1-2-3": ["(“Uhhhhhhhhh......uh......uh.....uh....uhhh“)", false, ["dialogue.bar.responses['2-2-1-3R']"]],
+                  "2-2-1-1-3": ["(“Uhhhhhhm………uhhh……..mmmmmmmmhhh”)", false, ["dialogue.bar.responses['2-2-1-3R']"]],
                   "2-2-1-2": ["(“You wanna know how I got these scars?“)", false, ["dialogue.bar.responses['2-2-1-2R']"]],
-                  "2-2-1-3": ["(“Uhhhhh......uhmmmmmm.......uhhhhhhhhh“)", true, ["dialogue.bar.responses['2-2-1-3R']"]],
+                  "2-2-1-3": ["(“Uhhhhh......uhmmmmmm.......uhhhhhhhhh“)", false, ["dialogue.bar.responses['2-2-1-3R']"]],
                   "2-2-2": ["(“Now that’s a pretty fucking weird name”)", false, ["dialogue.bar.responses['2-2-2R']"]],
-                  "2-2-3": ["(“Uhhhhhh……uhhhh…….uh……arghhh”)", true, ["dialogue.bar.responses['2-2-3R']"]],
+                  "2-2-3": ["(“Uhhhhhh……uhhhh…….uh……arghhh”)", false, ["dialogue.bar.responses['2-2-3R']"]],
                   "2-3": ["(“Uhhhhhh……uhhhh…….uh……arghhh”)", true, ["dialogue.bar.responses['2-3R']"]]
               },
           "responses":
@@ -208,7 +213,7 @@ const dialogue = ({
                   "2-2-1-1-1R": ["“How rude!”<br><br>She slaps you and leaves the bar without finishing her Drink. You’re not sure what you did wrong. Maybe she just had a bad day.<br><br>Now there’s nothing else to do here, might as well leave too.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
                   "2-2-1-1-2R": ["“It’s just too boring at home, I needed to get out of there and have some fun.”", false, [true, "dialogue.bar.choices['2-2-1-1-2-1']", "dialogue.bar.choices['2-2-1-1-2-2']", "dialogue.bar.choices['2-2-1-1-2-3']"]],
                   "2-2-1-1-2-1R": ["“Screw you!” She slaps you and leaves the bar without finishing her Drink. If there’s something to take away from this encounter, it would probably be to not be too honest when talking to other people.<br><br>Since there is nothing else to do here now, you might as well just leave too.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
-                  "2-2-1-1-2-2R": ["She visibly recoils. “Yeah, haha. Hey, give me just a minute I have to fix my makeup.” You see her make her way to the restroom. Suddenly, you her a thump somewhere around the back of the building, then hasty footsteps. You wonder what that could be. After an hour of waiting, the bartender comes up to you and says “She’s gone bro, go home.” Defeated once again, you leave the bar.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
+                  "2-2-1-1-2-2R": ["She visibly recoils. “Yeah, haha. Hey, give me just a minute I have to fix my makeup.” You see her make her way to the restroom. Suddenly, you hear a thump somewhere around the back of the building, then hasty footsteps. You wonder what that could be. After an hour of waiting, the bartender comes up to you and says “She’s gone bro, go home.” Defeated once again, you leave the bar.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
                   "2-2-1-2R": ["“What scars?“<br><br>“You see, my father was a Gamer, a really bad one. And one day, he loses way more than usual and gets very angry. So he takes his CS-GO knife replica and puts it up to my face“<br><br>You take the straw from her Cocktail and shove it in her mouth, then continue<br><br>“And he says “Why so-““<br><br>The woman shoves you away and you fall to the floor. She spits on you agressively and stomps out of the bar. You were just getting to the good part too.<br><br>The bartender comes up to you and politely, yet furiously asks you to leave his establishment. You do as he says.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
                   "2-2-1-3R": ["“Are you alright there?” It seems like you’re once again taken over by  your carnal desire to sound like you just got a lobotomy. Since nothing else comes out of your mouth, she gets creeped out and leaves the bar without finishing her drink.<br><br>At some point, you regain consciousness and since she’s already gone, you also leave.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
                   "2-2-2R": ["She gets up and slaps your dumbass head, then leaves the bar.<br><br>That is a pretty weird name though…<br><br>Since there’s nothing else to do, you also leave.", "c", ["end", "dialogue.alley.text", "dialogue.alley.choices['1-1']", "dialogue.alley.choices['1-2']", "dialogue.alley.choices['1-3']"]],
@@ -226,7 +231,7 @@ const dialogue = ({
                   "1-2": ["(“Hi there little man, what’s your name?”)", false, ["dialogue.alley.responses['1-2R']"]],
                   "1-3": ["(“Uhhhhhhhhhh……uh……”)", true, ["dialogue.alley.responses['1-3R']"]],
                   "2-1": ["(“Making me meet your parents already? You must be pretty eager.”)", false, ["dialogue.alley.responses['2-1R']"]],
-                  "2-2": ["(“Ah, you must be his parents. Nice to meet you, my name is' + playername + '”)", false, ["dialogue.alley.responses['2-2R']"]],
+                  "2-2": ["(“Ah, you must be his parents. Nice to meet you, my name is " + playername + "”)", false, ["dialogue.alley.responses['2-2R']"]],
                   "2-3": ["(“Uhhhhhhh……..uhmmmmmmmmmmmm”)", true, ["dialogue.alley.responses['2-3R']"]],
                   "3-1": ["(“Hey, sorry for being so straightforward but do you maybe want to go out some time?”)", false, ["dialogue.alley.responses['3-1R']"]],
                   "3-2": ["(Give up)", false, ["dialogue.alley.responses['3-2R']"]],
@@ -265,15 +270,15 @@ const dialogue = ({
                   "1-1R": ["“Yeah, that’s what I thought. I’m not going to try to talk you out of this, it’s your choice. Hell, I’d do the same in your situation. I guess the only choice left to make is how you’ll do it.”", false, [true, "dialogue.last.choices['1-1-1']", "dialogue.last.choices['1-1-2']", "dialogue.last.choices['1-1-3']"]],
                   "1-1-1R": ["After having one last glass of milk, you make your way up to your bedroom and put a belt around your neck. You figure you’re worth just as much as the clothes you wear, so you enter your wardrobe and attach the belt right beside your coats. After some more minutes of reflecting on your life, you plunge yourself into the cold abyss. It doesn’t take long, and hurts less than you imagined. Everything goes dark.", "c", ["dialogue.ending"]],
                   "1-1-2R": ["You want to leave your mark on history. You grab your shotgun you use for home defense and leave your house. You conceal the gun and ride the bus to the local elementary school. You wait right in front of the entrance and remain there until school is over. As soon as the first bulk of children come out, you pull out your shotgun and shout “Hey kids! Check this out!” You bite into the muzzle and say “Get Traumatized bitches!” You pull the trigger and everything goes dark.", "c", ["dialogue.ending"]],
-                  "1-1-3R": ["There’s nothing else for you to say. You sit down in a corner and repeat this noise. Days pass…..eventually, Not Important leaves, realizing you will never return from this state. After weeks, your body finally gives in and you die of thirst.", "c", ["dialogue.ending"]],
+                  "1-1-3R": ["There’s nothing else for you to say. You sit down in a corner and repeat this noise. Days pass…..eventually, Not Important leaves, realizing you will never return from this state. After weeks, your body finally gives in and you die of thirst.", "e", ["dialogue.ending"]],
                   "1-2R": ["“Huh? What…..?”<br><br>You sprint to your computer and look up what it takes to buy the rights to a single character of a series and legally marry it. It costs a fortune.<br><br>You empty your bank account and hire a priest to marry your waifu “Yui-chan”. Not Important left ages ago, the moment he realized you were serious about that. You’re finally happy, even though you have no money left, lost your job because of your obsession with your “wife” and subsequently, now live in an alley.", "e", ["dialogue.ending"]],
-                  "1-3R": ["This is it. This is all you can do. This is what this adventure has led to. An indecisive, broken man who doesn’t even have to will to put a stop to this miserable existence. You go on living your life the way it has always been. No more adventures, nothing interesting in your life. You will work until you’re too old to be able to, then do nothing until your body gives in. You chose this.", "c", ["dialogue.ending"]]
+                  "1-3R": ["This is it. This is all you can do. This is what this adventure has led to. An indecisive, broken man who doesn’t even have to will to put a stop to this miserable existence. You go on living your life the way it has always been. No more adventures, nothing interesting in your life. You will work until you’re too old to be able to, then do nothing until your body gives in. You chose this.", "e", ["dialogue.ending"]]
               }
       },
   
   "secret":
       {
-          "text": "Suddenly, a bright light shines through your ceiling and a person descends from the heavens.<br><br>Not Important gets startled and falls to the ground.<br><br>Before you stands a beautiful woman in some kind of white gown with blonde hair.<br>“Greetings ' + playername + ', I am Indecivia, goddess of Uhhhhhh. Through your sheer Will and unfaltering conviction, you have proven your dedication to me like no one has ever before.”<br><br>“I have decided to award you the highest honor I can and make you my consort, if you wish so.”<br><br>Not Important mutters “D-does that mean you’ll go on a date with him?”<br><br>“Yes, and much much more. We’ll be together for eternity.”<br><br>“Oh.”<br><br>“So ' + playername + ', do you accept my proposal?",
+          "text": "Suddenly, a bright light shines through your ceiling and a person descends from the heavens.<br><br>Not Important gets startled and falls to the ground.<br><br>Before you stands a beautiful woman in some kind of white gown with blonde hair.<br>“Greetings " + playername + ", I am Indecivia, goddess of Uhhhhhh. Through your sheer Will and unfaltering conviction, you have proven your dedication to me like no one has ever before.”<br><br>“I have decided to award you the highest honor I can and make you my consort, if you wish so.”<br><br>Not Important mutters “D-does that mean you’ll go on a date with him?”<br><br>“Yes, and much much more. We’ll be together for eternity.”<br><br>“Oh.”<br><br>“So " + playername + ", do you accept my proposal?",
           "choices":
               {
                   "1": ["“Uhhhhhhhhhhh”", false, ["dialogue.secret.responses['resp']"]],
@@ -282,7 +287,7 @@ const dialogue = ({
               },
           "responses":
               {
-                  "resp": ["“I’m glad to hear that. Come, let’s ascend to our happy ending……together.”", false, ["dialogue.ending"]]
+                  "resp": ["“I’m glad to hear that. Come, let’s ascend to our happy ending……together.”", "e", ["dialogue.ending"]]
               }
       },
   
@@ -291,51 +296,39 @@ const dialogue = ({
 
 
 
-let playername = document.getElementsByName("name");
-
 let uhCounter = 0;
-
-let free = false;
-
-loop = true;
-
-console.log(dialogue.start.choices["1-1"][1]);
 
 currentMain = dialogue.start.text
 contentMain = document.getElementById("story")
 currentB1 = dialogue.start.choices['1-1']
 currentB2 = dialogue.start.choices['1-2']
 currentB3 = dialogue.start.choices['1-3']
-console.log(currentB1)
 
 let contentContinue = document.getElementById("buttonContinue");
 let contentB1 = document.getElementById("buttonOne");
 let contentB2 = document.getElementById("buttonTwo");
 let contentB3 = document.getElementById("buttonThree");
 
-
-
 contentMain.innerHTML = currentMain[0];
 contentB1.innerHTML = currentB1[0];
 contentB2.innerHTML = currentB2[0];
 contentB3.innerHTML = currentB3[0];
 
-function reset() {
-    evaluatedMain = 0
-}
 
 function main() {
     evaluatedMain = eval(currentMain[0])
     contentMain.innerHTML = evaluatedMain[0]
     if (evaluatedMain[1] == "c") {
-        console.log("eval " + evaluatedMain)
-        console.log("eval 1 " + evaluatedMain[1])
+        contentContinue.style.display = "block"
         contentContinue.innerHTML = "Continue"
-        contentB1.innerHTML = ""
-        contentB2.innerHTML = ""
-        contentB3.innerHTML = ""
-        console.log("eval end " + evaluatedMain[2][0])
+        contentB1.style.display = "none"
+        contentB2.style.display = "none"
+        contentB3.style.display = "none"
         if (evaluatedMain[2][0] == "end") {
+          contentContinue.style.display = "block"
+          contentB1.style.display = "none"
+          contentB2.style.display = "none"
+          contentB3.style.display = "none"
           currentMain = eval(evaluatedMain[2][1])
           currentB1 = eval(evaluatedMain[2][2])
           currentB2 = eval(evaluatedMain[2][3])
@@ -345,10 +338,11 @@ function main() {
         }
       }
     else if (evaluatedMain[1] == "e") {
+        contentContinue.style.display = "block"
         contentContinue.innerHTML = "End"
-        contentB1.innerHTML = ""
-        contentB2.innerHTML = ""
-        contentB3.innerHTML = ""
+        contentB1.style.display = "none"
+        contentB2.style.display = "none"
+        contentB3.style.display = "none"
         currentMain = eval(evaluatedMain[2])
     }
     else if (eval(evaluatedMain[2][0]) == true) {
@@ -362,8 +356,6 @@ function main() {
       contentB1.innerHTML = currentB1[0];
       contentB2.innerHTML = currentB2[0];
       contentB3.innerHTML = currentB3[0];
-      console.log("curr B1 " + currentB1)
-      console.log("curr main " + currentMain)
     }
     else {
       contentB1.innerHTML = "B1 None Dummy";
@@ -378,24 +370,27 @@ function main() {
 //Funktion des Continue Button
 function buttonChangeContinue() {
   if (contentContinue.innerHTML == "End") {
-    console.log("PENIS")
     contentMain.innerHTML = dialogue.ending
+    contentContinue.style.display = "none"
   }
   else if (evaluatedMain[2][0] == "end") {
     currentMain = evaluatedMain[2][1]
     contentMain.innerHTML = eval(currentMain)
+    contentB1.style.display = "block"
+    contentB2.style.display = "block"
+    contentB3.style.display = "block"
     contentB1.innerHTML = eval(evaluatedMain[2][2])[0]
     contentB2.innerHTML = eval(evaluatedMain[2][3])[0]
     contentB3.innerHTML = eval(evaluatedMain[2][4])[0]
-    contentContinue.innerHTML = ""
+    contentContinue.style.display = "none"
   }
   else {
-  if (contentMain.innerHTML == dialogue.ending){
-    console.log("it is")
-  }
-  currentMain = evaluatedMain[2]
-  contentContinue.innerHTML = ""
-  main()
+    currentMain = evaluatedMain[2]
+    contentContinue.style.display = "none"
+    contentB1.style.display = "block"
+    contentB2.style.display = "block"
+    contentB3.style.display = "block"
+    main()
   }
 }
 
@@ -403,7 +398,7 @@ function buttonChangeContinue() {
 
 //Funktion zum abändern wenn man auf den ersten Button klickt
 function buttonChangeOne() {
-  currentMain = currentB1[2] ///////////////////////
+  currentMain = currentB1[2]
   main()
 }
 
@@ -415,13 +410,22 @@ function buttonChangeTwo() {
 
 
 function buttonChangeThree() {
+  if (currentB3[1] == true) {
+    uhCounter++
+  }
+  if (uhCounter == 15) {
+    uhCounter = 0
+    contentMain.innerHTML = dialogue.secret.text
+    contentB1.innerHTML = dialogue.secret.choices['1'][0]
+    contentB2.innerHTML = dialogue.secret.choices['2'][0]
+    contentB3.innerHTML = dialogue.secret.choices['3'][0]
+    currentB1 = dialogue.secret.choices['1']
+    currentB2 = dialogue.secret.choices['2']
+    currentB3 = dialogue.secret.choices['3']
+    return
+  }
+  else {
   currentMain = currentB3[2]
-  main()
-}
-
-
-// Hide the login container per click on X
-function closeLogin(){
-  var loginForm = document.getElementById("login"); 
-  loginForm.style.display = "none"; 
+  }
+main()
 }
