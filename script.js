@@ -1,4 +1,5 @@
-/* This is the HTML Version of Big Like, Great Disappointment.
+/* This is the HTML Version of Big Like, Great Disappointment. 
+   This was the original concept, since none of us could use anything else than HTML, CSS and a drop of JS.
    It is extremely limited because I can't be arsed to add anymore to this
    rather stupid Version. Maybe I'll do another one with renpy where I'll actually
    put in some effort (I hope) */
@@ -295,13 +296,8 @@ const dialogue = ({
 });
 
 
-
+// for secret ending
 let uhCounter = 0
-
-image = document.getElementById("image")
-// for use when images have been added
-image.style.display = "none"
-//image.src = "insert here"
 
 
 currentMain = dialogue.start.text
