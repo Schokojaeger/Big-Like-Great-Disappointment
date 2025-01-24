@@ -3,26 +3,16 @@ body{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: max-content max-content; 
-    background-color: rgb(41, 41, 40);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 237, 191);
+    font-family: sans-serif;
 }
 
 /*Game styling*/
-#image {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-top: 15px;
-/* adjust when image added */
-    /* max-height: 20%; */
-    /* max-width: 20%; */
-}
-
 .main_story {
     position: relative;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    background-color: #ffa4b6;
+    background-color: rgb(255, 220, 135);
     height: fit-content; 
     border-radius: 15px;
     padding: 10px;
@@ -59,12 +49,12 @@ body{
     border-radius: 10px;
     margin-bottom: 10px;
     border: none;
-    background-color: #a5def2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(210, 210, 210);
+    font-family: sans-serif;
 }
 
 .btn:hover{
-    background-color: #89cff1;
+    background-color: rgb(255, 220, 135);
 }
 
 /* Mobile */
